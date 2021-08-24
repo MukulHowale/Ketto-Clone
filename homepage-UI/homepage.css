@@ -23,7 +23,6 @@
 .img-inner-div{
     width: 520px;
     height: 300px;
-    /* border: 1px solid black; */
     position: absolute;
     top: 100px;
     right: 170px;
@@ -49,7 +48,6 @@
     flex-direction: row;
     width: 100%;
     height: 70px;
-    /* border: 1px solid black; */
     margin-bottom: 25px;
 }
 
@@ -61,13 +59,12 @@
 
 .featured{
     width: 730px;
-    height: 170px;
-    /* border: 1px solid black; */
+    height: 160px;
     display: flex;
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -50px;
+    bottom: -40px;
     margin: 0 auto;
     background-color: white;
     border-radius: 10px;
@@ -79,7 +76,6 @@
     width: 250px;
     height: 160px;
     margin-right: 30px;
-    /* border: 1px solid black; */
 }
 .img-div-2 > img{
     width: 250px;
@@ -90,7 +86,6 @@
 .featured-info{
     width: 420px;
     height: 170px;
-    /* border: 1px solid black; */
 }
 
 .featured-info > div{
@@ -103,7 +98,7 @@
 }
 
 .featured-info > p{
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     line-height: 27px;
 }
 
