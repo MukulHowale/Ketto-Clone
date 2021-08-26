@@ -41,3 +41,6 @@ for(let i=1; i<causes.length; i+=2){
         causes[i].style.cursor ="pointer";
     }
 }
+
+//success stories dynamic
+
