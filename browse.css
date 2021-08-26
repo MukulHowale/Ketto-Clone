@@ -1,0 +1,95 @@
+#backgroundImage{
+  
+  height: 490px;
+  width:100%;
+  background-image: url('https://i.postimg.cc/TP9MpGRV/browse-banner-b297d8fa737d43a2c4bf.png');
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+
+#backText > p{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: -300px;
+    margin-left: 430px;
+    font-size: 72px;
+    color: #ffffff;
+    line-height: 108px;
+    font-weight: 700;
+}
+
+#backText > p:nth-child(2){
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: -80px;
+    margin-left: 400px;
+    font-size: 36px;
+    color: #ffffff;
+    line-height: 45px;
+    font-weight: 400;
+}
+
+#categories{
+  float: left;
+  height:630px;
+  width: 265px;
+  background-color: #F5F5F5;
+  border-radius: 6px;
+  margin-top: 120px;
+  margin-left: 200px;
+}
+#categories > p:nth-child(1){
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-left: 30px;
+    font-size: 17px;
+    color: black;
+    line-height: 27px;
+    font-weight: 700;
+}
+#categories hr{
+   
+   width: 220px;
+   color: black;
+}
+#categories > a{
+    line-height: 40px;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-left: 30px;
+    font-size: 17px;
+    color:#01bfbd ;    ;
+    font-weight: 600;
+}
+
+#categories > button{
+    width:230px ;
+    height: 35px;
+    line-height: 21px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 8px;
+    margin-left: 20px;
+    font-size: 17px;
+    background-color:#01bfbd ;    
+    border: 1px solid #01bfbd ;
+    color: white;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+#fundraisers{
+   
+    width: 800px ;
+    margin-left: 80px;
+    margin-top: 81px;
+    display: grid;
+    grid-template-columns: 35% 35% 35%;
+     
+}
+
+#fundraisers > div{
+    margin-left: 50px;
+    gap: 50px;
+    border: 1px solid red;
+    height: 400px;
+    width: 250px;
+    margin-top: 80px;
+    border-radius: 8px;
+}
