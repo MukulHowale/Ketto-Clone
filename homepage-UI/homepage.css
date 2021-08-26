@@ -5,7 +5,7 @@
 
 .container{
     width: 100%;
-    height: 100%;
+    height: 120%;
 }
 
 #support{
@@ -389,6 +389,22 @@ h2{
     padding-top: 30px;
 }
 
+#card{
+    width: 950px;
+    height: 380px;
+    margin-left: 20px;
+    box-shadow: 0 7px 14px 0 rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    /* border: 1px solid black; */
+}
+
+#divInfo{
+    width: 480px;
+    height: 100%;
+    /* border: 1px solid black; */
+    float : right;
+}
+
 /* featured IN */
 
 .featured-in{
@@ -400,27 +416,17 @@ h2{
 
 .carousel-featured{
     width: 100%;
-    display: flex;
-    flex-grow: 1,2,1;
-    margin-left: 30px;
+    padding-top: 50px;
     /* border: 1px solid black; */
 }
 
 .carousel-featured-in{
     width: 90%;
     height: 200px;
+    margin-left: 50px;
     /* border: 1px solid black; */
 }
 
-.go-left-btn-1, .go-right-btn-1{
-    padding-top: 100px;
-    width: 50px;
-}
-
-.go-left-btn-1 > button, .go-right-btn-1 > button{
-    border: none;
-    background-color: white;
-}
 
 /* Text Styles */
 
