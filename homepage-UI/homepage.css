@@ -210,14 +210,12 @@ h2{
 .right{
     width: 498px;
     height: 650px;
-    border: 1px solid black;
     padding-top: 50px;
 }
 
 .left{
     width: 498px;
     height: 600px;
-    border: 1px solid black;
     display: flex;
     flex-direction: row;
     padding-top: 100px;
@@ -226,12 +224,21 @@ h2{
 .simple-img > img{
     width: 80px;
     height: 500px;
+    margin-right: 20px;
 }
 
 .simple-info > div{
     width: 390px;
     height: 190px;
-    border: 1px solid black;
+}
+
+.simple-info  h4{
+    line-height: 30px;
+    padding-bottom: 10px;
+}
+
+.simple-info  p{
+    line-height: 27px;
 }
 
 .right > video{
@@ -242,14 +249,95 @@ h2{
 .bottom{
     width: 100%;
     height: 150px;
-    border: 1px solid black;
 }
 
 .bottom > div{
     display: flex;
     flex-direction: row;
+    margin-top: 50px;
 }
 
+.bottom > div > button:nth-child(1){
+    margin-left: 200px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgb(1 191 189 / 30%);
+}
+
+.bottom > div > button:nth-child(2){
+    margin-left: 20px;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+}
+
+.b{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+}
+ .chat{
+     width: 400px;
+     height: 100%;
+     display: flex;
+ }
+
+ .chat > div{
+     width: 200px;
+     height: 80%;
+     border-radius: 50px;
+     text-align: center;
+     padding-top: 10px;
+ }
+
+ .chat > div:nth-child(1){
+    background-color: #354F84;
+    margin-right: 10px;
+ }
+
+ .chat > div:nth-child(2){
+    background-color: #13CB6A;
+ }
+
+ .chat img{
+     margin-right: 10px;
+ }
+
+ /* causese div */
+
+#causes-img{
+     display: grid;
+     grid-template-columns:182px 182px 182px 182px 182px 182px;
+     grid-template-rows: 159px 159px;
+     grid-gap: 10px;
+     margin-left: 180px;
+     margin-bottom: 50px;
+     margin-top: 30px;
+ }
+
+ #causes-img > div{
+     position: relative;
+ }
+
+ #causes-img span{
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    font-style: 'Source Sans Pro', sans-serif;
+    color: white;
+    top: 100px;
+    font-weight: 700;
+ }
+
+ #causes-img > div > div{
+    width: 20px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+    top: 120px;
+ }
 
 /* Text Styles */
 
