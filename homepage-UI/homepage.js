@@ -146,4 +146,3 @@ function car(i){
 car(ind);
 
 
-
