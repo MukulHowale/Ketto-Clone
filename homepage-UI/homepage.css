@@ -172,11 +172,14 @@ h2{
     width: 100%;
     background-color: white;
     border: none;
+    cursor: pointer;
 }
 
 .carousel-view{
     width: 1000px;
     height: 450px;
+    display: grid;
+    grid-template-columns: 35% 35% 35%;
     /* border: 1px solid black; */
 }
 

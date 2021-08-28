@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="homepage.css">
     <link rel="stylesheet" href="..\header\header.css">
     <link rel="stylesheet" href="..\footer\footer.css">
+    <link rel="stylesheet" href="..\homepage-UI\carousel\carousel.css">
 </head>
 <body>
     <div id="navbar">
@@ -78,17 +79,17 @@
                 <h2 class="font-style font-color_1 text-align" style="line-height: 54px;">Trending Fundraiser</h2>
                 <p class="font-style text-align img-inner-div-info-size_2 font-color_4" style="margin-bottom: 70px; line-height: 26px;">View the fundraisers that are most active right now</p>
                 <div class="carousel">
-                    <div class="go-left-btn">
+                    <div id="glb" class="go-left-btn">
                         <button>
                             <em class="material-icons green-color-text-2">
                                 arrow_back_ios
                             </em>
                         </button>
                     </div>
-                    <div class="carousel-view">
-                        <!-- yet to be updated -->
+                    <div id="cV" class="carousel-view">
+                        <!-- DOM -->
                     </div>
-                    <div class="go-right-btn">
+                    <div id="grb" class="go-right-btn">
                         <button>
                             <em class="material-icons green-color-text-2">
                                 arrow_forward_ios
@@ -335,3 +336,4 @@
 <script src="homepage.js"></script>
 <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 <script src="..\footer\footer.js"></script>
+<script src="..\homepage-UI\carousel\carousel.js"></script>
