@@ -19,7 +19,7 @@ var fund_raisers = [
     userImage : "https://kettocdn.gumlet.io/media/ngo/2169000/2169187/image/607ea638e3612.jpg?w=50&dpr=1.3",
     fundraiser : "Nithilyam",
     daysLeft : 4,
-    supporters : 1904,
+    supporters : 194,
     category : "Education",
     raised : 16800,
     goal :  300000
@@ -326,7 +326,8 @@ var fund_raisers = [
          innerDiv.style.color = "inherit";
 
          innerDiv.append(imageTag,titleTag,userLogo,raiser,raisedFund,textraised,progress_Bar,daysTag,text1,supportTag,text2);
-
+         innerDiv.setAttribute('id',data.fundraiser);   //giving id to each cards as name of the Fundraiser
+         innerDiv.setAttribute('onclick',"individualCard(this.id)");
           document.getElementById('fundraisers').append(innerDiv);
     });
   }
@@ -403,7 +404,7 @@ var fund_raisers = [
         text1.innerText = "Days Left";
         text1.setAttribute('id','txt1');
 
-
+ 
         let supportTag = document.createElement('p');
         supportTag.innerText = data.supporters;
         supportTag.setAttribute('id','supporters');
@@ -418,13 +419,17 @@ var fund_raisers = [
          innerDiv.style.color = "inherit";
 
          innerDiv.append(imageTag,titleTag,userLogo,raiser,raisedFund,textraised,progress_Bar,daysTag,text1,supportTag,text2);
-
-          document.getElementById('fundraisers').append(innerDiv);
+         innerDiv.setAttribute('id',data.fundraiser);  //giving id to each cards as name of the Fundraiser
+         innerDiv.setAttribute("onclick","individualCard(this.id)");
+         document.getElementById('fundraisers').append(innerDiv);
 
        }
-
     });
-   
   }
 
-  showAllFundraisers();
+   //function to handle the click on individual cards
+   function  individualCard(name){
+       var para = new URLSearchParams();
+       para.append("fundRaiser",name);
+       location.href = "donate.html?" + para.toString();
+   }
