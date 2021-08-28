@@ -280,6 +280,13 @@
             margin-right: 60%;
         }
         }
+        .container{
+            margin:1% 0%;
+        }
+        .info{
+            font-size: 13px;
+            color:springgreen;
+        }
     </style>
 </head>
 <body>
@@ -300,6 +307,11 @@
                     <img src="https://tse4.mm.bing.net/th?id=OIP.RJ0qNFaBAOWwndJUmyluwwHaPH&pid=Api&P=0&w=300&h=300">
                     <p class="paragraph">Name as mentioned in your Aadhar card</p>
                 </div>
+                <div  class="container">
+                    <span class="info">Do you want to add same Email Address as that of Signed In</span>
+                    <button id="Yesemail">Yes</button>
+                    <button id="Noemail">No</button>
+                </div>
                 <div> 
                     <input type="email" placeholder="Email Address"  class="all" id="EmailAddress">
                     <img src="https://tse1.mm.bing.net/th?id=OIP.TeVD2wCteYFgJv7VFFEGoAHaF0&pid=Api&P=0&w=195&h=154">
@@ -309,6 +321,11 @@
                     <input type="password" placeholder="Create a Password"  class="all" id="password">
                     <img src="https://tse4.mm.bing.net/th?id=OIP.JBDaA3wLKnf0V1T5T8mIEgHaHa&pid=Api&P=0&w=300&h=300" id="pass">
                     <p class="paragraph">Field Required</p>
+                </div>
+                <div  class="container">
+                    <span class="info">Do you want to add same Contact Information as that of Signed In</span>
+                    <button id="Yescontact">Yes</button>
+                    <button id="Nocontact">No</button>
                 </div>
                 <div id="select_country">
                     <select id="Select">
@@ -334,39 +351,93 @@
         <p id="close"><a href="Project_1.html">Close</p>
     </form>
     <script>
+        if(localStorage.getItem("myarr") == null)
+        {
+            localStorage.setItem("myarr",JSON.stringify([]));
+        }
         function putemail()
         {
-            var element = document.getElementById("EmailAddress");
-            var storage = localStorage.getItem("myEmail");
-            if(storage == null)
+            var useremail = document.getElementById("EmailAddress");
+            var storageemail = localStorage.getItem("UserEmail");
+            var userpassword = document.getElementById("password");
+            var storagepassword = localStorage.getItem("UserPassword");
+            var usercontact = document.getElementById("telephone");
+            var storagecontact = localStorage.getItem("UserContactNumber");
+            var Name = document.getElementById("name").value;
+            if(useremail === storageemail)
             {
-                var EmailAddress = JSON.stringify(element.value);
-                localStorage.setItem("myEmail", EmailAddress);
+                alert("Already signed in with this name")
             }
-            else{
-                var EmailAddress = JSON.stringify(element.value);
-                localStorage.setItem("myEmail", EmailAddress);
-            }
+            var myName = JSON.stringify(Name);
+            localStorage.setItem("myarr[0]" , myName);
+            var Emailaddress = JSON.stringify(useremail.value);
+            localStorage.setItem("myarr[1]", Emailaddress);
+            var Password = JSON.stringify(userpassword.value);
+            localStorage.setItem("myarr[2]", Password);
+            var Contact = JSON.stringify(usercontact.value);
+            localStorage.setItem("myarr[3]", Contact);
             var selecteditem = document.getElementById("Selectthings");
             var value = selecteditem.options[selecteditem.selectedIndex].value;
             var Value = JSON.stringify(value);
-            localStorage.setItem("Purpose" , Value);
-            var phonenumber = document.getElementById("telephone").value;
-            var telnum = JSON.stringify(phonenumber);
-            localStorage.setItem("Mobile Number" , telnum);
+            localStorage.setItem("myarr[4]" , Value);
             var selectedcountry = document.getElementById("Select");
             var countryvalue = selectedcountry.options[selectedcountry.selectedIndex].value;
             var countryValue = JSON.stringify(countryvalue);
-            localStorage.setItem("Country" , countryValue);
-            var Name = document.getElementById("name").value;
-            var myName = JSON.stringify(Name);
-            localStorage.setItem("User Name" , myName);
-            var Password = document.getElementById("password").value;
-            var userPassword = JSON.stringify(Password);
-            localStorage.setItem("User Password" , userPassword);
+            localStorage.setItem("myarr[5]" , countryValue);
         }
         var checking = document.getElementById("checkpost");
         checking.addEventListener("click" , putemail);
+        var acceptemail = document.getElementById("Yesemail");
+        var unacceptemail = document.getElementById("Noemail");
+        function changecolorgreenemail(){
+            acceptemail.style.backgroundColor = "white";
+            acceptemail.style.color = "black";
+            unacceptemail.style.backgroundColor = "white";
+            unacceptemail.style.color = "black";
+            acceptemail.style.backgroundColor = "green";
+            acceptemail.style.color = "white";
+            var storageemail = localStorage.getItem("UserEmail");
+            var Emailaddress = JSON.stringify(storageemail);
+            var sub = storageemail.substring(1 , Emailaddress.length-4);
+            localStorage.setItem("myarr[1]", storageemail);
+            var e = document.getElementById("EmailAddress");
+            e.value = sub;
+        }
+        function changecolorredemail(){
+            acceptemail.style.backgroundColor = "white";
+            acceptemail.style.color = "black";
+            unacceptemail.style.backgroundColor = "white";
+            unacceptemail.style.color = "black";
+            unacceptemail.style.backgroundColor = "red";
+            unacceptemail.style.color = "white";
+        }
+        acceptemail.addEventListener('click' , changecolorgreenemail);
+        unacceptemail.addEventListener('click' , changecolorredemail);
+        var acceptcontact = document.getElementById("Yescontact");
+        var unacceptcontact = document.getElementById("Nocontact");
+        function changecolorgreencontact(){
+            acceptcontact.style.backgroundColor = "white";
+            acceptcontact.style.color = "black";
+            unacceptcontact.style.backgroundColor = "white";
+            unacceptcontact.style.color = "black";
+            acceptcontact.style.backgroundColor = "green";
+            acceptcontact.style.color = "white";
+            var storagecontact = localStorage.getItem("UserContactNumber");
+            var contactinfo = JSON.stringify(storagecontact);
+            localStorage.setItem("myarr[3]", storagecontact);
+            var num = document.getElementById("telephone");
+            num.value = localStorage.getItem("myarr[3]");
+        }
+        function changecolorredcontact(){
+            acceptcontact.style.backgroundColor = "white";
+            acceptcontact.style.color = "black";
+            unacceptcontact.style.backgroundColor = "white";
+            unacceptcontact.style.color = "black";
+            unacceptcontact.style.backgroundColor = "red";
+            unacceptcontact.style.color = "white";
+        }
+        acceptcontact.addEventListener('click' , changecolorgreencontact);
+        unacceptcontact.addEventListener('click' , changecolorredcontact);
     </script>
 </body>
 </html>
