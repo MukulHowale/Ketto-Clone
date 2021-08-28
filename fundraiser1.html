@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fundraiser1</title>
+    <style>
+        body {
+            width: 70%;
+            margin: auto;
+        }
+
+        img {
+            width: 1.5%;
+            height: 1.5%;
+        }
+
+        #rupee_symbol {
+            width: 1%;
+            height: 1%;
+        }
+
+        #amount {
+            width: 30%;
+            background: powderblue;
+        }
+
+        #about {
+            width: 25%;
+        }
+
+        #fundraiser_image {
+            grid-area: fm;
+            font-size: 12px;
+        }
+
+        #myFile {
+            grid-area: mfile;
+        }
+
+        #qmimage {
+            width: 5%;
+            height: 5%;
+        }
+
+        #typefile {
+            width: 100%;
+            height: 30%;
+            color: rgb(238, 95, 95);
+        }
+
+        #optional {
+            display: grid;
+            width: 80%;
+            grid-template: "fm mfile";
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        #purpose {
+            text-align: center;
+            margin-bottom: 3%;
+        }
+
+        .amountprice {
+            font-size: 13px;
+        }
+
+        #belongings {
+            margin-bottom: 2%;
+        }
+
+        #social {
+            margin-bottom: 2%;
+        }
+
+        #bottom_line {
+            font-size: 13px;
+            text-align: center;
+        }
+
+        #platform {
+            background: skyblue;
+            width: 60%;
+            color: rgb(59, 179, 226);
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: 2%;
+            font-size: 15px;
+        }
+
+        #save {
+            background: skyblue;
+            color: white;
+            font-size: 18px;
+            width: 60%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: 2%;
+        }
+
+        #close {
+            text-align: end;
+            border-radius: 50%;
+        }
+
+        @media screen and (max-width:300px) {
+            body {
+                background-color: darkmagenta;
+            }
+            #typefile{
+                width:600%;
+            }
+            #amount{
+                width:110%;
+            }
+        }
+
+        @media screen and (min-width:300px) {
+            body {
+                background-color: darkturquoise;
+            }
+            #typefile{
+                width:450%;
+            }
+            #amount{
+                width:100%;
+            }
+        }
+
+        @media screen and (min-width:350px) {
+            body {
+                background-color: darkturquoise;
+            }
+            #typefile{
+                width:350%;
+            }
+            #amount{
+                width:90%;
+            }
+        }
+
+        @media screen and (min-width:350px) {
+            body {
+                background-color: darkturquoise;
+            }
+            #typefile{
+                width:270%;
+            }
+            #amount{
+                width:80%;
+            }
+        }
+
+        @media screen and (min-width:400px) {
+            body {
+                background-color: rgb(4, 251, 255);
+            }
+            #typefile{
+                width:223%;
+            }
+            #amount{
+                width:70%;
+            }
+        }
+
+        @media screen and (min-width:500px) {
+            body {
+                background-color: rgb(129, 54, 129)
+            }
+            #typefile{
+                width:123%;
+            }
+            #amount{
+                width:60%;
+            }
+        }
+        @media screen and (min-width:600px) {
+            body {
+                background-color: rgb(129, 54, 129)
+            }
+            #typefile{
+                width:113%;
+            }
+            #amount{
+                width:50%;
+            }
+        }
+
+        @media screen and (min-width:700px) {
+            body {
+                background-color: fuchsia;
+            }
+            #typefile{
+                width:108%;
+            }
+            #amount{
+                width:40%;
+            }
+        }
+
+        @media screen and (min-width:900px) {
+            body {
+                background-color: greenyellow;
+            }
+            #typefile{
+                width:100%;
+            }
+            #amount{
+                width:30%;
+            }
+        }
+
+        @media screen and (min-width:1100px) {
+            body {
+                background-color: indigo;
+            }
+            #typefile{
+                width:90%;
+            }
+            #amount{
+                width:20%;
+            }
+        }
+
+        @media screen and (min-width:1300px) {
+            body {
+                background-color: lawngreen;
+            }
+            #typefile{
+                width:80%;
+            }
+            #amount{
+                width:15%;
+            }
+        }
+
+        @media screen and (min-width:2000px) {
+            body {
+                background-color: lightpink;
+            }
+        }
+
+        .all {
+            color: rgb(247, 133, 247);
+        }
+        #relation{
+            background: orchid;
+        }
+        #media{
+            background: pink;
+        }
+        #relation> :nth-child(3n+1) {
+            background: orange;
+            color:white;
+        }
+
+        #relation> :nth-child(3n+2) {
+            background: white;
+            color:navy;
+        }
+
+        #relation> :nth-child(3n) {
+            background: green;
+            color:white;
+        }
+        #media> :nth-child(3n+1) {
+            background: orange;
+            color:white;
+        }
+
+        #media> :nth-child(3n+2) {
+            background: white;
+            color:navy;
+        }
+
+        #media> :nth-child(3n) {
+            background: green;
+            color:white;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Tell us more about your Fundraiser</h2>
+    <hr />
+    <div id="purpose" class="all">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.q3ZSK8ng29GMsRcdKioqtAHaGZ&pid=Api&P=0&w=201&h=174">
+        <span>Raising funds for</span>
+        <span>Medical Treatment</span>
+        <span>Purpose</span>
+    </div>
+    <form>
+        <div>
+            <input type="text" placeholder="How much do you want to raise?" id="amount">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.WdimILm-4EnXKfq5-5N7nwHaHa&pid=Api&P=0&w=300&h=300">
+            <p class="all">
+                <span class="amountprice">Should be minimum</span>
+                <img src="https://tse3.mm.bing.net/th?id=OIP.V-RvSb0oSUYIIbLwbdaMdAAAAA&pid=Api&P=0&w=300&h=300"
+                    id="rupee_symbol">
+                <span class="amountprice">2000</span>
+            </p>
+        </div>
+        <div id="belongings">
+            <span class="all">The Patient is my</span>
+            <select id="relation">
+                <option value="Father">Father</option>
+                <option value="Mother">Mother</option>
+                <option value="Brother">Brother</option>
+                <option value="Sister">Sister</option>
+                <option value="Cousin">Cousin</option>
+                <option value="Uncle">Uncle</option>
+                <option value="Aunt">Aunt</option>
+                <option value="Grandfather">Grandfather</option>
+                <option value="Grandmother">Grandmother</option>
+                <option value="Others">Others</option>
+            </select>
+        </div>
+        <div id="social">
+            <span class="all">How Did You Hear About Us?</span>
+            <select id="media">
+                <option value="Google">Google</option>
+                <option value="Whatsapp">Whatsapp</option>
+                <option value="Facebook">Facebook</option>
+                <option value="You Tube">You Tube</option>
+                <option value="Instagram">Instagram</option>
+                <option value="Friends">Friends</option>
+                <option value="Relatives">Relatives</option>
+                <option value="Others">Others</option>
+            </select>
+        </div>
+        <div id="optional">
+            <div id="fundraiser_image">
+                <p class="all">Add Fundraiser image/video</p>
+                <p class="all">(Optional)</p>
+            </div>
+            <div id="myFile">
+                <input type="file" id="typefile">
+                <p><img src="https://tse3.mm.bing.net/th?id=OIP.WdimILm-4EnXKfq5-5N7nwHaHa&pid=Api&P=0&w=300&h=300"
+                        id="qmimage"></p>
+            </div>
+        </div>
+        <p id="bottom_line" class="all">You can easily make changes to your fundraiser at any time</p>
+        <p id="platform" class="all">Ketto's zero platform fee policy will ensure more funds for you</p>
+        <p id="save"><a href="fundraiser2.html">Save and Continue</p>
+        <p id="close"><a href="Project_1.html">Close</p>
+    </form>
+    <script>
+        function name_changer() {
+            var Language = document.getElementById("language");
+            if (Language.textContent === "हिंदी") {
+                Language.textContent = "English";
+            }
+            else if (Language.textContent === "English") {
+                Language.textContent = "हिंदी";
+            }
+        }
+    </script>
+</body>
+
+</html>
