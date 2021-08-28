@@ -221,5 +221,5 @@ function pass(arr){
 var inDiv = document.getElementById('innerDiv');
 
 inDiv.onclick = function(){
-   window.location.href = "";
+   window.location.href = "../donate/donate.html";
 }
