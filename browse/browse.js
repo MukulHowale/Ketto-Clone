@@ -174,6 +174,39 @@ var fund_raisers = [
     goal :  5000000
    },
    {
+    title : "Help Devika Beat Cancer!",
+    image : "https://kettocdn.gumlet.io/media/campaign/313000/313459/image/wid602e47d17c8f9.jpeg?w=300&dpr=1.3",
+    userImage : "https://kettocdn.gumlet.io/media/individual/3901000/3901004/image/6114f08c34d54.jpg?w=50&dpr=1.3",
+    fundraiser : "Family",
+    daysLeft : 15,
+    supporters : 68,
+    category : "Medical",
+    raised : 313954,
+    goal :  7000000
+   },
+   {
+    title : "Help Father And His 20-Year Old Son, Father-Kidney Transplant, Son- Bone Marrow Transplant. Please Save The Family",
+    image : "https://kettocdn.gumlet.io/media/campaign/218000/218792/image/wid60326899153a5.jpeg?w=300&dpr=1.3",
+    userImage : "https://kettocdn.gumlet.io/media/individual/1358000/1358229/image/5e58e4fc7b807.jpg?w=50&dpr=1.3",
+    fundraiser : "Sunil Arekar",
+    daysLeft : 49,
+    supporters : 18,
+    category : "Medical",
+    raised : 123954,
+    goal :  2000000
+   },
+   {
+    title : "Support Mr. Gaurav Srivastava's ECMO And Lung Transplant Expenses",
+    image : "https://kettocdn.gumlet.io/media/campaign/418000/418927/image/wid60ae5a3d17c20.jpeg?w=300&dpr=1.3",
+    userImage : "https://kettocdn.gumlet.io/media/individual/1802000/1802525/image/5f26d8efdd564.jpg?w=50&dpr=1.3",
+    fundraiser : "Shraddha Sharma",
+    daysLeft : 9,
+    supporters : 118,
+    category : "Medical",
+    raised : 193954,
+    goal :  3000000
+   },
+   {
     title : "To Distribute Sanitary Pads To Poor Women Impacted By Covid/Corona Lockdown",
     image : "https://kettocdn.gumlet.io/media/campaign/191000/191540/image/wid5eaab67e1520c.png?w=300&dpr=1.3",
     userImage : "https://kettocdn.gumlet.io/media/ngo/701000/701043/image/612083829f12c.jpg?w=50&dpr=1.3",
@@ -194,6 +227,28 @@ var fund_raisers = [
     category : "Womens & Girls",
     raised : 302554,
     goal :  500000
+   },
+   {
+    title : "Help Dr Ashwini Meherda Spread Smiles For Purnata",
+    image : "https://kettocdn.gumlet.io/media/campaign/117000/117114/image/wid5eba67d0e4594.jpeg?w=300&dpr=1.3",
+    userImage : "https://kettocdn.gumlet.io/media/individual/1112000/1112594/image/6127fc9f7800f.jpg?w=50&dpr=1.3",
+    fundraiser : "Dr. Ashwini Meherda",
+    daysLeft : 12,
+    supporters :267,
+    category : "Womens & Girls",
+    raised : 102554,
+    goal :  300000
+   },
+   {
+    title : "Help Our Surbhi Girls In Realising Their Dreams In The Aftermath Of The Pandemic",
+    image : "https://kettocdn.gumlet.io/media/campaign/364000/364515/image/wid607ed55b73f5e.jpeg?w=300&dpr=1.3",
+    userImage : "https://kettocdn.gumlet.io/media/ngo/1061000/1061530/image/25f33f244066a9bd0c7b8737c7dc1a6177f003d1.jpg?w=50&dpr=1.3",
+    fundraiser : "Anvarat Foundation",
+    daysLeft : 23,
+    supporters :199,
+    category : "Womens & Girls",
+    raised : 521554,
+    goal :  900000
    },
    {
     title : "URGENT FUNDS NEEDED To Maintain The Shelter Infrastructure",

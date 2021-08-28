@@ -1,4 +1,4 @@
-var main = document.getElementById('main');
+var main = document.getElementsByClassName('main');
 
 var footer = document.createElement("div");
 footer.setAttribute('id', 'footer');
@@ -221,7 +221,7 @@ p90.style.color = "white";
 
 low.appendChild(p90);
 
-main.appendChild(footer);
+main[0].appendChild(footer);
 
 footer.append(upper,mid,low);
 
