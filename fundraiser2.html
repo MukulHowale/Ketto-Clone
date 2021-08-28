@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FundRaiser2</title>
+    <style>
+        body{
+            width:70%;
+            text-align: center;
+            margin-left: 10%;
+            margin-right: 25%;
+        }
+        img{
+            width:1.5%;
+            height:1.5%;
+        }
+        .container{
+            margin:1% 0%;
+        }
+        .info{
+            font-size: 13px;
+            color:springgreen;
+        }
+        #close{
+            text-align: end;
+            border-radius: 50%;
+        }
+        #all1{
+            background: orange;
+            color:white;
+        }
+        #all2{
+            background:violet;
+            color:white;
+        }
+        #all3{
+            background:skyblue;
+            color:white;
+        }
+        #all4{
+            background: turquoise;
+            color:white;
+        }
+        #selecting
+        {
+            background: paleturquoise;
+        }
+        #selecting > :nth-child(3n+1){
+            background: orange;
+            color:white;
+        }
+        #selecting > :nth-child(3n+2){
+            background:white;
+            color:navy;
+        }
+        #selecting > :nth-child(3n){
+            background:green;
+            color:white;
+        }
+        @media screen and (max-width:300px)
+        {
+            body{
+                background-color: darkmagenta;
+            }
+            #select_country{
+                width:170%;
+            }
+            #select_country{
+            margin-left: 1%;
+            margin-right: 1%;
+        }
+        #telephone{
+            width:1%;
+        }
+        }
+        @media screen and (min-width:300px)
+        {
+            body{
+                background-color:darkturquoise;
+            }
+        }
+        @media screen and (min-width:350px)
+        {
+            body{
+                background-color:darkturquoise;
+            }
+        }
+        @media screen and (min-width:350px)
+        {
+            body{
+                background-color:darkturquoise;
+            }
+        }
+        @media screen and (min-width:400px)
+        {
+            body{
+                background-color:rgb(4, 251, 255);
+            }
+        }
+        @media screen and (min-width:500px)
+        {
+            body{
+                background-color:rgb(129, 54, 129)
+            }
+        }
+        @media screen and (min-width:700px)
+        {
+            body{
+                background-color:fuchsia;
+            }
+        }
+        @media screen and (min-width:900px)
+        {
+            body{
+                background-color:greenyellow;
+            }
+        }
+        @media screen and (min-width:1100px)
+        {
+            body{
+                background-color:indigo;
+            }
+        }
+        @media screen and (min-width:1300px)
+        {
+            body{
+                background-color:lawngreen;
+            }
+        }
+        @media screen and (min-width:2000px)
+        {
+            body{
+                background-color:lightpink;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Tell us about the patient</h2><hr/>
+    <form>
+        <div class="container">
+            <input type="text" placeholder="Patient's full name" id="all1">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.WdimILm-4EnXKfq5-5N7nwHaHa&pid=Api&P=0&w=300&h=300">
+        </div>
+        <div class="container">
+            <span class="info">Patient's age</span>
+            <select id="selecting">
+                <option value="0-10 years">0-10 years</option>
+                <option value="10-20 years">10-20 years</option>
+                <option value="20-30 years">20-30 years</option>
+                <option value="30-40 years">30-40 years</option>
+                <option value="40-50 years">40-50 years</option>
+                <option value="50-60 years">50-60 years</option>
+                <option value="60-70 years">60-70 years</option>
+                <option value="70-80 years">70-80 years</option>
+                <option value="80-90 years">80-90 years</option>
+                <option value="90-100 years">90-100 years</option>
+                <option value="100-110 years">100-110 years</option>
+                <option value="110-120 years">110-120 years</option>
+                <option value="120-130 years">120-130 years</option>
+                <option value="More than 130 years">More than 130 years</optio>
+            </select>
+        </div>
+        <div  class="container">
+            <input type="text" placeholder = "Ailment/Medical Condition"  id="all2">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.fuPXyVwEldOsfDz3NqjPUwHaHX&pid=Api&P=0&w=300&h=300">
+        </div>
+        <div  class="container">
+            <span class="info">Is the patient admitted to Hospital</span>
+            <button id="Yes">Yes</button>
+            <button id="No">No</button>
+        </div>
+        <div  class="container">
+            <input type="text" placeholder="Hospital" id="all3">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.fuPXyVwEldOsfDz3NqjPUwHaHX&pid=Api&P=0&w=300&h=300">
+        </div>
+        <div  class="container">
+            <input type="text" placeholder="Enter Your City"  id="all4">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.Vf_tXhmtdOuLn1tYZMYztwHaFb&sspid=Api&P=0&w=222&h=163">
+        </div>
+        <p><a href = "fundraiser3.html">Save and Continue</p>
+        <p id="close"><a href="Project_1.html">Close</p>
+    </form>
+    <script>
+        var accept = document.getElementById("Yes");
+        var unaccept = document.getElementById("No");
+        function changecolorgreen(){
+            accept.style.backgroundColor = "green";
+            accept.style.color = "white";
+        }
+        function changecolorred(){
+            unaccept.style.backgroundColor = "red";
+            unaccept.style.color = "white";
+        }
+        accept.addEventListener('click' , changecolorgreen);
+        unaccept.addEventListener('click' , changecolorred);
+    </script>
+</body>
+</html>
