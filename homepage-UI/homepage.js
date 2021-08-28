@@ -132,6 +132,7 @@ function car(i){
     
     var A = document.createElement('a');
     A.textContent = "Read More";
+    A.style.cursor = "pointer";
     A.setAttribute('class','green-color-text-2')
     
     divA.appendChild(A);

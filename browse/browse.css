@@ -1,0 +1,206 @@
+#backgroundImage{
+  
+  height: 490px;
+  width:100%;
+  background-image: url('https://i.postimg.cc/TP9MpGRV/browse-banner-b297d8fa737d43a2c4bf.png');
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+
+#backText > p{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: -300px;
+    margin-left: 430px;
+    font-size: 72px;
+    color: #ffffff;
+    line-height: 108px;
+    font-weight: 700;
+}
+
+#backText > p:nth-child(2){
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: -80px;
+    margin-left: 400px;
+    font-size: 36px;
+    color: #ffffff;
+    line-height: 45px;
+    font-weight: 400;
+}
+
+#categories{
+  float: left;
+  height:630px;
+  width: 265px;
+  background-color: #F5F5F5;
+  border-radius: 6px;
+  margin-top: 120px;
+  margin-left: 200px;
+}
+#categories > p:nth-child(1){
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-left: 30px;
+    font-size: 17px;
+    color: black;
+    line-height: 27px;
+    font-weight: 700;
+}
+#categories hr{
+   
+   width: 220px;
+   color: black;
+}
+#categories  a{
+    line-height: 40px;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-left: 30px;
+    font-size: 17px;
+    color:#01bfbd ;    ;
+    font-weight: 600;
+}
+
+#categories > button{
+    width:230px ;
+    height: 35px;
+    line-height: 21px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 8px;
+    margin-left: 20px;
+    font-size: 17px;
+    background-color:#01bfbd ;    
+    border: 1px solid #01bfbd ;
+    color: white;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+#fundraisers{
+   
+    width: 800px ;
+    margin-left: 80px;
+    margin-top: 81px;
+    display: grid;
+    grid-template-columns: 35% 35% 35%;
+     
+}
+
+#fundraisers > a{
+    margin-left: 50px;
+    gap: 50px;
+    height: 400px;
+    width: 250px;
+    margin-top: 80px;
+    border-radius: 12px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+#fundraisers > a:hover{
+     
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#fundraisers > a img{
+    width: 250px ;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+ 
+#raiserText{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 14px;
+    margin-left: 60px;
+    margin-top: -30px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+#titleText{
+    
+    white-space: nowrap;
+    display:inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    line-height: 22px;
+    font-size: 18px;
+    margin-left: 16px;
+    
+}
+#raisedFund{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 22px;
+    margin-left: 16px;
+    margin-right: 10px;
+     
+}
+
+#txtraised{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 17px;
+    color: #999999;
+    margin-top: -45px;
+    margin-left: 153px;
+    
+}
+
+#progressBar{
+    height: 7px;
+    width: 210px;
+    border-radius: 4px;
+    background-color: rgb(178,236,235);
+    margin-left:16px; 
+    position: relative;
+}
+
+#progressDone{
+    height: 100%;
+    border-radius: 4px;
+    position: absolute;
+    background-color: rgb(1,191,189);
+     
+}
+#days{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 17px;
+    margin-left: 16px;
+    margin-right: 10px;
+}
+#supporters{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 16px;
+    margin-left: 120px;
+    margin-top: -40px;
+}
+#txt1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 14px;
+    margin-left: 40px;
+    margin-top: -40px;
+}
+#txt2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 14px;
+    margin-left: 152px;
+    margin-top: -40px;
+}
