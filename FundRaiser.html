@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FundRaiser</title>
+    <style>
+        body{
+            width:70%;
+            text-align: center;
+            margin-left: 10%;
+            margin-right: 25%;
+        }
+        img{
+            width:1.1%;
+            height:1%;
+        }
+        #Select
+        {
+            flex-basis:40%;
+            width:20%;
+            background: pink;
+        }
+        #Select > :nth-child(3n+1)
+        {
+            background: orange;
+            color:white;
+        }
+        #Select > :nth-child(3n+2)
+        {
+            background: white;
+            color:navy;
+        }
+        #Select > :nth-child(3n)
+        {
+            background: green;
+            color:white;
+        }
+        #Selectthings > :nth-child(3n+1)
+        {
+            background: orange;
+            color:white;
+        }
+        #Selectthings > :nth-child(3n+2)
+        {
+            background: white;
+            color:navy;
+        }
+        #Selectthings > :nth-child(3n)
+        {
+            background: green;
+            color:white;
+        }
+        #telephone{
+            flex-basis: 40%;
+            background: palegreen;
+            color:white;
+        }
+        #select_country{
+            display:flex;
+            flex-direction: row;
+            gap:1%;
+            margin-bottom: 3%;
+        }
+        #mobile{
+            width:6%;
+            height:6%;
+        }
+        #pass{
+            width:2%;
+            height:2%;
+        }
+        .paragraph{
+            font-size: 11px;
+            color:violet;
+        }
+        #main_details{
+            border: 1px solid rgb(206, 205, 205);
+            width:40%;
+            height:20%;
+            border-bottom-left-radius: 10% 100%;
+            border-bottom-right-radius: 10% 100%;
+            border-top-left-radius: 10% 100%;
+            border-top-right-radius: 10% 100%;
+            padding:1%;
+            margin:auto;
+            background:springgreen;
+        }
+        #Name_details{
+            margin-top:3%;
+        }
+        #login_credential{
+            font-size: 13px;
+            margin-bottom: 1%;
+        }
+        .class{
+            color:gray;
+        }
+        #final{
+            background: cyan;
+            color: white;
+            margin-left:auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: 2%;
+            width:30%;
+        }
+        #checkpost{
+            margin-bottom: 2%;
+            margin-top:2%;
+            background-color: springgreen;
+            color:white;
+        }
+        #close{
+            text-align: end;
+            border-radius: 50%;
+        }
+        #Selectthings{
+            background: turquoise;
+        }
+        #name{
+            background: skyblue;
+            color:white;
+        }
+        #EmailAddress{
+            background:violet;
+            color:white;
+        }
+        #password{
+            background: turquoise;
+            color:white;
+        }
+        @media screen and (max-width:300px)
+        {
+            body{
+                background-color: darkmagenta;
+            }
+            #select_country{
+                width:170%;
+            }
+            #select_country{
+            margin-left: 1%;
+            margin-right: 1%;
+        }
+        #telephone{
+            width:1%;
+        }
+        }
+        @media screen and (min-width:300px)
+        {
+            body{
+                background-color:darkturquoise;
+            }
+            #select_country{
+                width:150%;
+            }
+            #select_country{
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+        }
+        @media screen and (min-width:350px)
+        {
+            body{
+                background-color:darkturquoise;
+            }
+            #select_country{
+                width:135%;
+            }
+            #select_country{
+            margin-left: 3%;
+            margin-right: 3%;
+        }
+        }
+        @media screen and (min-width:350px)
+        {
+            body{
+                background-color:darkturquoise;
+            }
+            #select_country{
+                width:120%;
+            }
+            #select_country{
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        #telephone{
+            flex-basis:20%;
+        }
+        }
+        @media screen and (min-width:400px)
+        {
+            body{
+                background-color:rgb(4, 251, 255);
+            }
+            #select_country{
+                width:100%;
+            }
+            #select_country{
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        }
+        @media screen and (min-width:500px)
+        {
+            body{
+                background-color:rgb(129, 54, 129)
+            }
+            #select_country{
+                width:80%;
+            }
+            #select_country{
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+        }
+        @media screen and (min-width:700px)
+        {
+            body{
+                background-color:fuchsia;
+            }
+            #select_country{
+                width:50%;
+            }
+            #select_country{
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+        }
+        @media screen and (min-width:900px)
+        {
+            body{
+                background-color:greenyellow;
+            }
+            #select_country{
+                width:40%;
+            }
+            #select_country{
+            margin-left: 35%;
+            margin-right: 35%;
+        }
+        }
+        @media screen and (min-width:1100px)
+        {
+            body{
+                background-color:indigo;
+            }
+            #select_country{
+                width:30%;
+            }
+            #select_country{
+            margin-left: 40%;
+            margin-right: 40%;
+        }
+        }
+        @media screen and (min-width:1300px)
+        {
+            body{
+                background-color:lawngreen;
+            }
+            #select_country{
+                width:20%;
+            }
+            #select_country{
+            margin-left: 50%;
+            margin-right: 50%;
+        }
+        }
+        @media screen and (min-width:2000px)
+        {
+            body{
+                background-color:lightpink;
+            }
+            #select_country{
+                width:10%;
+            }
+            #select_country{
+            margin-left: 60%;
+            margin-right: 60%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <h2>Start you Fundraiser</h2><hr/>
+    <form>
+        <div>
+            <div id="main_details">
+                <span id="maincontent">Purpose of Raising Funds</span>
+                <span>
+                    <select id="Selectthings">
+                        <option value="Medical Treatment">Medical Treatment</option>
+                        <option value="NGO/Charity">NGO/Charity</option>
+                        <option value="Other Cause">Other Cause</option>
+                    </select>
+            </div>
+                <div id="Name_details">
+                    <input type="text" placeholder="Name" class="all" id="name">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.RJ0qNFaBAOWwndJUmyluwwHaPH&pid=Api&P=0&w=300&h=300">
+                    <p class="paragraph">Name as mentioned in your Aadhar card</p>
+                </div>
+                <div> 
+                    <input type="email" placeholder="Email Address"  class="all" id="EmailAddress">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.TeVD2wCteYFgJv7VFFEGoAHaF0&pid=Api&P=0&w=195&h=154">
+                    <p class="paragraph">Field Required</p>
+                </div>
+                <div>
+                    <input type="password" placeholder="Create a Password"  class="all" id="password">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.JBDaA3wLKnf0V1T5T8mIEgHaHa&pid=Api&P=0&w=300&h=300" id="pass">
+                    <p class="paragraph">Field Required</p>
+                </div>
+                <div id="select_country">
+                    <select id="Select">
+                        <option value="India" id="india">India(भारत) +91</option>
+                        <option value="United States" id="us">United States +1</option>
+                        <option value="United Kingdom" id="uk">United Kingdom +44</option>
+                        <option value="United Arab Emirates" id="uae">United Arab Emirates(الإمارات العربية المتحدة) +971</option><hr/>
+                        <option value="Afghanistan" id="afghanistan">Afghanistan(افغانستان) +93</option>
+                        <option value="Angola" id="angola">Angola +244</option>
+                        <option value="Andorra" id="andorra">Andorra +376</option>
+                    </select>
+                    <input type="tel" placeholder="Mobile" id="telephone">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.2T0mnx3J2gPNjMNwgjOvmQHaHa&pid=Api&P=0&w=300&h=300" id="mobile"><br/>
+                </div>
+            </span>
+        </div>
+        <p><button id="checkpost">Please Click here before moving to Next Page</button></p>
+        <div id="login_credential">
+            <span class="paragraph">Already have an account?</span>
+            <span><a href="SignIn.html">Login</span>
+        </div>
+        <div id="final"><a href="fundraiser1.html">Next</div>
+        <p id="close"><a href="Project_1.html">Close</p>
+    </form>
+    <script>
+        function putemail()
+        {
+            var element = document.getElementById("EmailAddress");
+            var storage = localStorage.getItem("myEmail");
+            if(storage == null)
+            {
+                var EmailAddress = JSON.stringify(element.value);
+                localStorage.setItem("myEmail", EmailAddress);
+            }
+            else{
+                var EmailAddress = JSON.stringify(element.value);
+                localStorage.setItem("myEmail", EmailAddress);
+            }
+            var selecteditem = document.getElementById("Selectthings");
+            var value = selecteditem.options[selecteditem.selectedIndex].value;
+            var Value = JSON.stringify(value);
+            localStorage.setItem("Purpose" , Value);
+            var phonenumber = document.getElementById("telephone").value;
+            var telnum = JSON.stringify(phonenumber);
+            localStorage.setItem("Mobile Number" , telnum);
+            var selectedcountry = document.getElementById("Select");
+            var countryvalue = selectedcountry.options[selectedcountry.selectedIndex].value;
+            var countryValue = JSON.stringify(countryvalue);
+            localStorage.setItem("Country" , countryValue);
+            var Name = document.getElementById("name").value;
+            var myName = JSON.stringify(Name);
+            localStorage.setItem("User Name" , myName);
+            var Password = document.getElementById("password").value;
+            var userPassword = JSON.stringify(Password);
+            localStorage.setItem("User Password" , userPassword);
+        }
+        var checking = document.getElementById("checkpost");
+        checking.addEventListener("click" , putemail);
+    </script>
+</body>
+</html>
