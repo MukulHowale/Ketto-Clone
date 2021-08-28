@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        body{
+            margin:auto;
+            width:70%;
+            text-align: center;
+        }
+        #heading{
+            grid-area:head;
+            width:30%;
+            margin-bottom:0%;
+            margin-left:auto;
+            margin-right: auto;
+        }
+
+        #left {
+            grid-area: Left;
+            text-align: center;
+            width: 45%;
+            margin: 2% 2%;
+        }
+
+        #right {
+            grid-area: Right;
+            text-align: center;
+            width: 45%;
+            margin-top:15%;
+        }
+        #googlelogo {
+            width: 10%;
+            height: 5%;
+        }
+
+        #facebooklogo {
+            width: 10%;
+            height: 5%;
+        }
+
+        #fbword {
+            font-size: 11px;
+        }
+
+        #google_button {
+            width: 130%;
+            height: 10%;
+            margin-bottom: 2%;
+            background: pink;
+        }
+
+        #facebook_button {
+            width: 130%;
+            height: 10%;
+            background: rgb(221, 99, 221);
+        }
+
+        #OTP {
+            width: 113%;
+            background: skyblue;
+            color: white;
+            margin: auto;
+            margin-top: 2%;
+        }
+
+        #Password {
+            color: skyblue;
+            font-size: 15px;
+            margin: auto;
+            width: 130%;
+            margin-top: 2%;
+        }
+
+        #part1 {
+            font-size: 10px;
+            font-weight: 300;
+        }
+
+        #part2 {
+            font-size: 10px;
+            color: skyblue;
+            font-weight: 300;
+        }
+
+        #part {
+            width: 130%;
+            margin-top: 2%;
+            margin:auto;
+        }
+
+        #fund {
+            width: 130%;
+            margin-top: 2%;
+            margin:auto;
+        }
+
+        #fundraiser {
+            font-size: 13px;
+        }
+        #signin {
+            width: 125%;
+            background: skyblue;
+            color: white;
+            margin: auto;
+            margin-top: 2%;
+        }
+
+        #otp {
+            color: skyblue;
+            font-size: 15px;
+            margin: auto;
+            width: 130%;
+            margin-top: 2%;
+        }
+        #fundclick {
+            font-size: 13px;
+            color: skyblue;
+        }
+        #close{
+            grid-area:Close;
+        }
+        #Form {
+            display: grid;
+            grid-template: "Left Right";
+       }
+       #close{
+            text-align: end;
+            border-radius: 50%;
+        }
+        #email{
+            width:120%;
+            background: rgb(196, 125, 196);
+            color:white;
+        }
+        #password{
+            width:120%;
+            background: pink;
+            color:white;
+        }
+        @media screen and (max-width:300px)
+        {
+            body{
+                background-color: darkmagenta;
+            }
+            #Form{
+                display:grid;
+                grid-template:"Right"
+                              "Left";
+            }
+            #email{
+                width:150%;
+            }
+            #password{
+                width:150%;
+            }
+        }
+        @media screen and (min-width:300px)
+        {
+            body{
+                background-color:darkturquoise;
+            }
+            #Form{
+                display:grid;
+                grid-template:"Right"
+                              "Left";
+            }
+        }
+        @media screen and (min-width:500px)
+        {
+            body{
+                background-color:deepskyblue;
+            }
+            #Form{
+                display:grid;
+                grid-template:"Right"
+                              "Left";
+            }
+        }
+        @media screen and (min-width:700px)
+        {
+            body{
+                background-color:fuchsia;
+            }
+            #Form{
+                display:grid;
+                grid-template:"Right"
+                              "Left";
+            }
+        }
+        @media screen and (min-width:900px)
+        {
+            body{
+                background-color:greenyellow;
+            }
+            #Form{
+                display:grid;
+                grid-template:"Left Right";
+            }
+        }
+        @media screen and (min-width:1100px)
+        {
+            body{
+                background-color:indigo;
+            }
+            #Form{
+                display:grid;
+                grid-template:"Left Right";
+            }
+        }
+        @media screen and (min-width:1300px)
+        {
+            body{
+                background-color:lawngreen;
+            }
+            #Form{
+                display:grid;
+                grid-template:"Left Right";
+            }
+        }
+        @media screen and (min-width:2000px)
+        {
+            body{
+                background-color:lightpink;
+            }
+            #Form{
+                display:grid;
+                grid-template:"Left Right";
+            }
+        }
+    </style>
+</head>
+<body>
+    <h3 id="heading">Login</h3>
+    <form id="Form">
+        <div id="left">
+            <p><input type="email" id="email" placeholder="Email Address"></p>
+            <p><input type="password" placeholder="Password" id="password"></p>
+            <p><button id="signin" onclick="insert()"><a href = "Project_1.html"> Sign In</button></p>
+            <p id="otp"><a href="SignIn.html">Login via OTP</p>
+            <div id="part">
+                <span id="part1">By continuing you agree to our</span>
+                <span id="part2">Terms of Service</span>
+                <span id="part1">and</span>
+                <span id="part2">Privacy Policy</span>
+            </div>
+            <p id="fund">
+                <span id="fundraiser">Want to start a fundraiser?</span>
+                <span id="fundclick">Click here</span>
+            </p>
+        </div>
+        <div id="right">
+            <div>
+                <button id="google_button">
+                    <img src="https://ketto.gumlet.io/assets/images/login/google.png?w=240&dpr=1.3" id="googlelogo">
+                    <span>Sign in with Google</span>
+                </button>
+            </div>
+            <p></p>
+            <div>
+                <button id="facebook_button">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.siN6ccZyRLabVg4v5a4xgQHaEK&pid=Api&P=0&w=270&h=153"
+                        id="facebooklogo" />
+                    <span id="fbword">Continue with facebook</span>
+                </button>
+            </div>
+        </div>
+        <p id="close"><a href="Project_1.html">Close</p>
+    </form>
+    <script>
+        function insert() {
+            var EmailAdd = document.getElementById("email").value;
+            if(EmailAdd == "")
+            {
+                alert("Sign In Unsuccessful")
+            }
+            else{
+                alert("Sign In Successful");
+                var EmailAddress = JSON.stringify(EmailAdd);
+                localStorage.setItem("myEmail", EmailAddress);
+            }
+        }
+    </script>
+</body>
+</html>
