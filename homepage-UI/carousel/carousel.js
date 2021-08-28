@@ -207,6 +207,7 @@ function pass(arr){
      text2.setAttribute('id','txt2');
   
       let innerDiv = document.createElement('a');
+      innerDiv.setAttribute('id','innerDiv');
       innerDiv.style.textDecoration = "none";
       innerDiv.href = "#";
       innerDiv.style.color = "inherit";
@@ -215,4 +216,10 @@ function pass(arr){
   
        document.getElementById('cV').append(innerDiv);
    }
+}
+
+var inDiv = document.getElementById('innerDiv');
+
+inDiv.onclick = function(){
+   window.location.href = "";
 }
