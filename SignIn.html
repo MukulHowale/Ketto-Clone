@@ -322,13 +322,24 @@
                     rev_S = rev_S + S[i];
                 }
                 var storage = localStorage.getItem("myEmail");
-                if(rev_S == "@gmail.com" && storage == null)
+                if(rev_S == "@gmail.com" || ((Number(rev_S)/1000000000) < 10 && (Number(rev_S)/1000000000) > 0))
                 {
-                    var EmailAddress = JSON.stringify(rev_S);
-                    localStorage.setItem("myEmail", phone);
+                    if(rev_S == "@gmail.com" && storage == null)
+                    {
+                        var EmailAddress = JSON.stringify(phone);
+                        localStorage.setItem("UserEmail", EmailAddress);
+                    }
+                    if(((Number(rev_S)/1000000000) < 10 && (Number(rev_S)/1000000000) > 0))
+                    {
+                        var MobileNumber = JSON.stringify(rev_S);
+                        localStorage.setItem("UserContactNumber", MobileNumber);
+                    }
+                    var form = document.getElementById("Form");
+                    form.action = "otpvalidation.html";
                 }
-                var form = document.getElementById("Form");
-                form.action = "otpvalidation.html";
+                else{
+                    alert("Please enter gmail id or proper mobile number");
+                }
             }
         }
     </script>
