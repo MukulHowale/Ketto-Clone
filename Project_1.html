@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <style>
+        body{
+            width:70%;
+           margin:auto;
+        }
+        #header{
+            grid-area: head;
+        }
+        #name{
+            font-size: 25px;
+            font-weight: 700;
+            grid-area: Name;
+        }
+        #browse{
+            grid-area: Browse;
+            margin-top:17%;
+            margin-left: 2%;
+            margin-right: 2%;
+            margin-bottom: 2%;
+        }
+        #select{
+            grid-area: Select;
+            width:80%;
+            height:50%;
+            margin-top:13%;
+            margin-left: 2%;
+            margin-right: 2%;
+            margin-bottom: 2%;
+        }
+        #working{
+            grid-area: work;
+            margin-top:23%;
+            margin-left: 2%;
+            margin-right: 2%;
+            margin-bottom: 2%;
+        }
+        #search{
+            grid-area: searching;
+            margin-top:30%;
+            margin-left: 2%;
+            margin-right: 2%;
+            margin-bottom: 2%;
+        }
+        #chat{
+            grid-area: chatting;
+            margin-top:17%;
+            margin-left: 2%;
+            margin-right: 2%;
+            margin-bottom: 2%;
+            height:50%;
+        }
+        #start{
+            grid-area: starting;
+            margin-top:10%;
+            margin-left: 2%;
+            margin-right: 2%;
+            margin-bottom: 2%;
+            height:50%;
+        }
+        #log_in{
+            grid-area: Log_In;
+            margin-top:25%;
+            margin-left: 2%;
+            margin-right: 2%;
+            margin-bottom: 2%;
+        }
+        #header{
+            display:grid;
+            grid-template:"Name Browse Select work searching chatting starting Log_In";
+        }
+        .open-button {
+            background-color: #555;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.8;
+            position: fixed;
+            bottom: 23px;
+            right: 28px;
+            width: 280px;
+            }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="header">
+            <p id="name">Ketto</p>
+            <p id="browse"><a href = "browse.html"></a>Browse Fundraisers</p>
+            <select id="select">Fundraisers for
+                <p><a href="medicaltreatment.html"></a><option value = "Medical Treatment" id="medical">Medical Treatment</option></p>
+                <p><a href="NGO,Charity.html"></a><option value = "NGO/Charity" id="NGO/Charity">NGO/Charity</option></p>
+                <p><a href="othercause.html"></a><option value = "Other Cause" id="others">Other Cause</option></p>
+            </select>
+            <p id="working"><a href="working.html"></a>How it works</p>
+            <button id="chat"><a href="chat.html"></a>Chat</button>
+            <button id="start"><a href="Fundraiser.html">Start a Fundraiser</button>
+            <p id="log_in"><a href = "SignIn.html">Sign In</p>
+        </div>
+    </div>
+    <script>
+    </script>
+</body>
+</html>
