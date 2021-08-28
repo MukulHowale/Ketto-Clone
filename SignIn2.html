@@ -273,14 +273,29 @@
     <script>
         function insert() {
             var EmailAdd = document.getElementById("email").value;
-            if(EmailAdd == "")
+            var Password = document.getElementById("password").value;
+            if(EmailAdd == "" || Password == "")
             {
                 alert("Sign In Unsuccessful")
             }
             else{
-                alert("Sign In Successful");
-                var EmailAddress = JSON.stringify(EmailAdd);
-                localStorage.setItem("myEmail", EmailAddress);
+                var storageemail = localStorage.getItem("UserEmail");
+                var storagepassword = localStorage.getItem("UserPassword");
+                if(storageemail === null && storagepassword === null)
+                {
+                    var EmailAddress = JSON.stringify(EmailAdd);
+                    localStorage.setItem("UserEmail", EmailAddress);
+                    var userPassword = JSON.stringify(Password);
+                    localStorage.setItem("UserPassword" , userPassword);
+                }
+                else{
+                    localStorage.removeItem("UserEmail");
+                    var EmailAddress = JSON.stringify(EmailAdd);
+                    localStorage.setItem("UserEmail", EmailAddress);
+                    localStorage.removeItem("UserPassword")
+                    var userPassword = JSON.stringify(Password);
+                    localStorage.setItem("UserPassword" , userPassword);
+                }
             }
         }
     </script>
