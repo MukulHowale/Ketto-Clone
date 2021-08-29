@@ -98,13 +98,23 @@
                 background-color:lightpink;
             }
         }
+        #imgpreview{
+            width:100%;
+            height:100%;
+        }
+        #typefile {
+            width: 100%;
+            height: 30%;
+            color: rgb(238, 95, 95);
+        }
     </style>
 </head>
 <body>
     <h2>Tell the story about why you are running a Fundraiser</h2><hr/>
     <p id="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste provident iure magnam, architecto totam dolores molestiae corrupti et reprehenderit! Repellat dicta praesentium accusamus commodi consequuntur rerum similique! Rem iste voluptates facilis explicabo quisquam soluta quam voluptatem, omnis nobis, in, vero nulla quaerat voluptatibus doloribus odio illo ratione. Veniam illum repudiandae nemo, labore iure quae provident impedit numquam architecto eaque tempora soluta obcaecati atque doloremque sapiente iste. Quis iste saepe quisquam architecto mollitia numquam animi repellendus id harum vero ut tenetur doloremque ab nemo velit voluptates, excepturi illum magnam corporis libero alias unde. Molestiae cupiditate aliquid, saepe hic mollitia consequatur voluptas similique. Magnam, odio praesentium, aperiam consectetur animi aliquid, temporibus nemo quas perspiciatis fugit nisi omnis unde. Eius aspernatur, recusandae quia dignissimos doloremque sit officia quod distinctio esse impedit illum incidunt vero ab minima molestiae. Incidunt quae error rem facere explicabo asperiores, suscipit hic repellat omnis ipsa doloribus mollitia quasi necessitatibus iusto iure placeat molestiae, voluptatum enim neque dolore inventore. Hic harum aut quasi unde corrupti nulla. Perspiciatis animi quam dolorum maxime autem tenetur consequatur facere quaerat nihil beatae molestias iusto, est cum earum porro quos ad, ab consequuntur quidem in aut blanditiis deleniti dolor temporibus. Doloremque error quibusdam animi maiores!</p><hr/>
     <p class="all">Add Medical Documents</p>
-    <span><input type="file" class="use"></span>
+    <span><input type="file" class="use" id="typefile"></span>
+    <img src="" alt="Preview" id="imgpreview">
     <p>
         <input type="checkbox" class="choosing">
         <span class="all">I agree to Ketto's</span>
@@ -121,5 +131,22 @@
     </p> 
     <p><a href = "fundraiser4.html"><input type="Submit" id="submit" class="choosing"></p>
     <p id="close"><a href="Project_1.html">Close</p>
+        <script>
+            var element = document.getElementById("typefile");
+        element.addEventListener("change",imagedisplay);
+        function imagedisplay(){
+            const reader = new FileReader();
+            reader.addEventListener("load",() => {
+                localStorage.setItem("image",reader.result);
+            })
+            reader.readAsDataURL(this.files[0]);
+        }
+        document.addEventListener("DOMContentLoaded",() => {
+            const recentimage = localStorage.getItem("image");
+            if(recentimage){
+                document.getElementById("imgpreview").setAttribute("src",recentimage);
+            }
+        })
+        </script>
 </body>
 </html>
