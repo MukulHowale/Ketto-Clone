@@ -362,7 +362,7 @@
         <p id="close"><a href="Project_1.html">Close</p>
     </form>
     <script>
-        if(localStorage.getItem("amount_details") != null)
+         if(localStorage.getItem("amount_details") != null)
         {
             var fund = document.getElementById("amount");
             fund.value = localStorage.getItem("amount_details");
@@ -385,6 +385,13 @@
         function fundamount(){
             var fundraiser_amount = document.getElementById("amount").value;
             localStorage.setItem("amount_details",JSON.stringify(fundraiser_amount));
+            var existingentries = JSON.parse(localStorage.getItem("details"));
+            var entry = {
+                amnt : fundraiser_amount ,
+            }
+            localStorage.setItem("entry",JSON.stringify(entry));
+            existingentries.push(entry);
+            localStorage.setItem("details" , JSON.stringify(existingentries))
         }
     </script>
 </body>
