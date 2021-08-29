@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="FundRaiser.js"></script>
-    <link rel="stylesheet" href="FundRaiser.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <title>FundRaiser</title>
     <style>
         body{
@@ -368,29 +367,45 @@
             var selectedcountry = document.getElementById("Select");
             var countryvalue = selectedcountry.options[selectedcountry.selectedIndex].value;
             var Name = document.getElementById("name").value;
+            var imgarr = [
+                {
+                    img1: "https://kettocdn.gumlet.io/media/campaign/476000/476725/image/widc79ded9d81121c88143fb2a872d41074f58b2c81.jpg?w=320&dpr=1.3" ,
+                } ,
+                {
+                    img2: "https://kettocdn.gumlet.io/media/campaign/218000/218792/image/wid60326899153a5.jpeg?w=320&dpr=1.3" ,
+                } ,
+                {
+                    img3: "https://kettocdn.gumlet.io/media/campaign/212000/212655/image/wid1f1a33100b0ce11487774ca00c4341f7d0364e69.jpg?w=320&dpr=1.3" ,
+                } ,
+                {
+                    img4: "https://tse2.mm.bing.net/th?id=OIP.3OSS3D-VdFJBy-Rxff5n9AHaE8&pid=Api&P=0&w=260&h=174" ,
+                }
+            ]
             var myarr = [
                 {
-                    myName : Name ,
+                    UserName : Name ,
                 } ,
                 {
-                    Emailaddress : useremail ,
+                    UserEmailaddress : useremail ,
                 } ,
                 {
-                    Password : userpassword ,
+                    UserPassword : userpassword ,
                 } ,
                 {
-                    Contact : usercontact ,
+                    UserContact : usercontact ,
                 } ,
                 {
                     Category :value ,
                 } ,
                 { 
-                    CountryValue: countryvalue ,
+                    UserCountry: countryvalue ,
                 } ,
                 {
-                    id: usercontact ,
-                }
+                    Userid: usercontact ,
+                } ,
             ]
+            const image_list = JSON.stringify(imgarr);
+            localStorage.setItem("imagelist",image_list);
             const details_list = JSON.stringify(myarr);
             localStorage.setItem("details",details_list);
             var useremailclone = document.getElementById("EmailAddress");
