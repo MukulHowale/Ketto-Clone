@@ -1,0 +1,129 @@
+  
+  #cV > a{
+      margin-left: 20px;
+      gap: 50px;
+      height: 420px;
+      width: 250px;
+      margin-top: 20px;
+      border-radius: 12px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  
+  
+  #cV > a:hover{
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  #cV > a img{
+      width: 250px ;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+  }
+   
+  #raiserText{
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 400;
+      line-height: 20px;
+      font-size: 14px;
+      margin-left: 60px;
+      margin-top: -30px;
+      white-space: nowrap; 
+      overflow: hidden;
+      text-overflow: ellipsis;  
+      margin-bottom: 15px;
+      /* border: 1px solid black; */
+  }
+  
+  #titleText{
+      
+      white-space: nowrap;
+      display:inline-block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 2;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      white-space: normal;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 700;
+      line-height: 22px;
+      font-size: 18px;
+      margin-left: 16px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      /* border: 1px solid black; */
+  }
+  #raisedFund{
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 700;
+      line-height: 30px;
+      font-size: 22px;
+      margin-left: 16px;
+      margin-right: 10px;
+      margin-bottom: 50px;
+      /* border: 1px solid black; */
+  }
+  
+  #txtraised{
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 400;
+      line-height: 20px;
+      font-size: 17px;
+      color: #999999;
+      margin-top: -75px;
+      margin-left: 153px;
+  }
+  
+  #progressBar{
+      height: 7px;
+      width: 210px;
+      border-radius: 4px;
+      background-color: rgb(178,236,235);
+      margin-left:16px; 
+      position: relative;
+      margin-top: 10px;
+  }
+  
+  #progressDone{
+      height: 100%;
+      border-radius: 4px;
+      position: absolute;
+      background-color: rgb(1,191,189);
+  }
+  #days{
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 700;
+      line-height: 30px;
+      font-size: 17px;
+      margin-left: 16px;
+      margin-right: 10px;
+      margin-top: 20px;
+      /* border: 1px solid black; */
+  }
+  #supporters{
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 700;
+      line-height: 30px;
+      font-size: 16px;
+      margin-left: 120px;
+      margin-top: -25px;
+      /* border: 1px solid black; */
+  }
+  #txt1{
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 400;
+      line-height: 20px;
+      font-size: 14px;
+      margin-left: 40px;
+      margin-top: -25px;
+      /* border: 1px solid black; */
+  }
+  #txt2{
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 400;
+      line-height: 20px;
+      font-size: 14px;
+      margin-left: 159px;
+      margin-top: -25px;
+      /* border: 1px solid black; */
+  }
