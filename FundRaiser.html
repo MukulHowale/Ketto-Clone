@@ -322,11 +322,6 @@
                     <img src="https://tse4.mm.bing.net/th?id=OIP.JBDaA3wLKnf0V1T5T8mIEgHaHa&pid=Api&P=0&w=300&h=300" id="pass">
                     <p class="paragraph">Field Required</p>
                 </div>
-                <div  class="container">
-                    <span class="info">Do you want to add same Contact Information as that of Signed In</span>
-                    <button id="Yescontact">Yes</button>
-                    <button id="Nocontact">No</button>
-                </div>
                 <div id="select_country">
                     <select id="Select">
                         <option value="India" id="india">India(भारत) +91</option>
@@ -351,39 +346,55 @@
         <p id="close"><a href="Project_1.html">Close</p>
     </form>
     <script>
-        if(localStorage.getItem("myarr") == null)
-        {
-            localStorage.setItem("myarr",JSON.stringify([]));
-        }
         function putemail()
         {
-            var useremail = document.getElementById("EmailAddress");
-            var storageemail = localStorage.getItem("UserEmail");
-            var userpassword = document.getElementById("password");
-            var storagepassword = localStorage.getItem("UserPassword");
-            var usercontact = document.getElementById("telephone");
-            var storagecontact = localStorage.getItem("UserContactNumber");
-            var Name = document.getElementById("name").value;
-            if(useremail === storageemail)
-            {
-                alert("Already signed in with this name")
-            }
-            var myName = JSON.stringify(Name);
-            localStorage.setItem("myarr[0]" , myName);
-            var Emailaddress = JSON.stringify(useremail.value);
-            localStorage.setItem("myarr[1]", Emailaddress);
-            var Password = JSON.stringify(userpassword.value);
-            localStorage.setItem("myarr[2]", Password);
-            var Contact = JSON.stringify(usercontact.value);
-            localStorage.setItem("myarr[3]", Contact);
+            var useremail = document.getElementById("EmailAddress").value;
+            var userpassword = document.getElementById("password").value;
+            var usercontact = document.getElementById("telephone").value;
             var selecteditem = document.getElementById("Selectthings");
             var value = selecteditem.options[selecteditem.selectedIndex].value;
-            var Value = JSON.stringify(value);
-            localStorage.setItem("myarr[4]" , Value);
             var selectedcountry = document.getElementById("Select");
             var countryvalue = selectedcountry.options[selectedcountry.selectedIndex].value;
-            var countryValue = JSON.stringify(countryvalue);
-            localStorage.setItem("myarr[5]" , countryValue);
+            var Name = document.getElementById("name").value;
+            var myarr = [
+                {
+                    myName : Name ,
+                } ,
+                {
+                    Emailaddress : useremail ,
+                } ,
+                {
+                    Password : userpassword ,
+                } ,
+                {
+                    Contact : usercontact ,
+                } ,
+                {
+                    Value :value ,
+                } ,
+                { 
+                    CountryValue: countryvalue ,
+                } ,
+                {
+                    id: usercontact ,
+                }
+            ]
+            const details_list = JSON.stringify(myarr);
+            localStorage.setItem("details",details_list);
+            var useremailclone = document.getElementById("EmailAddress");
+            useremailclone.value = myarr[1];
+            var userpasswordclone = document.getElementById("password");
+            userpasswordclone.value = details[2];
+            var usercontactclone = document.getElementById("telephone");
+            usercontactclone.value = details[3];
+            var selecteditemclone = document.getElementById("Selectthings");
+            var valueclone = selecteditem.options[selecteditem.selectedIndex];
+            valueclone.value = details[4];
+            var selectedcountryclone = document.getElementById("Select");
+            var countryvalueclone = selectedcountry.options[selectedcountry.selectedIndex];
+            countryvalueclone.value = details[5];
+            var Nameclone = document.getElementById("name");
+            Nameclone.value = details[0];
         }
         var checking = document.getElementById("checkpost");
         checking.addEventListener("click" , putemail);
@@ -399,7 +410,7 @@
             var storageemail = localStorage.getItem("UserEmail");
             var Emailaddress = JSON.stringify(storageemail);
             var sub = storageemail.substring(1 , Emailaddress.length-4);
-            localStorage.setItem("myarr[1]", storageemail);
+            localStorage.setItem("Emailaddress", storageemail);
             var e = document.getElementById("EmailAddress");
             e.value = sub;
         }
@@ -413,31 +424,6 @@
         }
         acceptemail.addEventListener('click' , changecolorgreenemail);
         unacceptemail.addEventListener('click' , changecolorredemail);
-        var acceptcontact = document.getElementById("Yescontact");
-        var unacceptcontact = document.getElementById("Nocontact");
-        function changecolorgreencontact(){
-            acceptcontact.style.backgroundColor = "white";
-            acceptcontact.style.color = "black";
-            unacceptcontact.style.backgroundColor = "white";
-            unacceptcontact.style.color = "black";
-            acceptcontact.style.backgroundColor = "green";
-            acceptcontact.style.color = "white";
-            var storagecontact = localStorage.getItem("UserContactNumber");
-            var contactinfo = JSON.stringify(storagecontact);
-            localStorage.setItem("myarr[3]", storagecontact);
-            var num = document.getElementById("telephone");
-            num.value = localStorage.getItem("myarr[3]");
-        }
-        function changecolorredcontact(){
-            acceptcontact.style.backgroundColor = "white";
-            acceptcontact.style.color = "black";
-            unacceptcontact.style.backgroundColor = "white";
-            unacceptcontact.style.color = "black";
-            unacceptcontact.style.backgroundColor = "red";
-            unacceptcontact.style.color = "white";
-        }
-        acceptcontact.addEventListener('click' , changecolorgreencontact);
-        unacceptcontact.addEventListener('click' , changecolorredcontact);
     </script>
 </body>
 </html>
