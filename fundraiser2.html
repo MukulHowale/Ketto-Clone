@@ -225,18 +225,6 @@
             ]
             const details_list = JSON.stringify(myarr);
             localStorage.setItem("Patientdetails",details_list);
-            var conditionclone = document.getElementById("all2");
-            conditionclone.value = myarr[2];
-            var hospitalclone = document.getElementById("all3");
-            hospitalclone.value = myarr[3];
-            var selectedageclone = document.getElementById("selecting");
-            var agevalueclone = selectedage.options[selectedage.selectedIndex];
-            agevalueclone.value = myarr[1];
-            var Nameclone = document.getElementById("all1");
-            Nameclone.value = myarr[0];
-            var cityclone = document.getElementById("all4");
-            cityclone.value = myarr[4];
-            a.href = Project_1.html;
         }
         var checking = document.getElementById("checkpost");
         checking.addEventListener("click" , putemail);
