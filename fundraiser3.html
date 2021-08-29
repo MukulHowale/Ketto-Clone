@@ -139,7 +139,7 @@
         function imagedisplay(){
             const reader = new FileReader();
             reader.addEventListener("load",() => {
-                localStorage.setItem("image",reader.result);
+                localStorage.setItem("imagedocument",reader.result);
             })
             reader.readAsDataURL(this.files[0]);
         }
