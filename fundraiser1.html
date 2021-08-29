@@ -81,6 +81,7 @@
         #bottom_line {
             font-size: 13px;
             text-align: center;
+            margin-top:30%;
         }
 
         #platform {
@@ -286,6 +287,10 @@
             background: green;
             color:white;
         }
+        #imgpreview{
+            width:100%;
+            height:100%;
+        }
     </style>
 </head>
 
@@ -342,8 +347,9 @@
                 <p class="all">Add Fundraiser image/video</p>
                 <p class="all">(Optional)</p>
             </div>
-            <div id="myFile">
+            <div id="myFile" onclick="fundamount()">
                 <input type="file" id="typefile">
+                <img src="" alt="Preview" id="imgpreview">
                 <p><img src="https://tse3.mm.bing.net/th?id=OIP.WdimILm-4EnXKfq5-5N7nwHaHa&pid=Api&P=0&w=300&h=300"
                         id="qmimage"></p>
             </div>
@@ -354,14 +360,30 @@
         <p id="close"><a href="Project_1.html">Close</p>
     </form>
     <script>
-        function name_changer() {
-            var Language = document.getElementById("language");
-            if (Language.textContent === "हिंदी") {
-                Language.textContent = "English";
+        //alert(localStorage.getItem("amount_details"));
+        if(localStorage.getItem("amount_details") != null)
+        {
+            var fund = document.getElementById("amount");
+            fund.value = localStorage.getItem("amount_details");
+        }
+        var element = document.getElementById("typefile");
+        element.addEventListener("change",imagedisplay);
+        function imagedisplay(){
+            const reader = new FileReader();
+            reader.addEventListener("load",() => {
+                localStorage.setItem("image",reader.result);
+            })
+            reader.readAsDataURL(this.files[0]);
+        }
+        document.addEventListener("DOMContentLoaded",() => {
+            const recentimage = localStorage.getItem("image");
+            if(recentimage){
+                document.getElementById("imgpreview").setAttribute("src",recentimage);
             }
-            else if (Language.textContent === "English") {
-                Language.textContent = "हिंदी";
-            }
+        })
+        function fundamount(){
+            var fundraiser_amount = document.getElementById("amount").value;
+            localStorage.setItem("amount_details",JSON.stringify(fundraiser_amount));
         }
     </script>
 </body>
