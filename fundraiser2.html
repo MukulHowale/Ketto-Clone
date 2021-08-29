@@ -125,6 +125,20 @@
                 background-color:lightpink;
             }
         }
+        #checkpost{
+            margin-bottom: 2%;
+            margin-top:2%;
+            background-color: springgreen;
+            color:white;
+        }
+        #Yes{
+            background-color: lawngreen;
+            color: white;
+        }
+        #No{
+            background-color: red;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -159,8 +173,10 @@
         </div>
         <div  class="container">
             <span class="info">Is the patient admitted to Hospital</span>
-            <button id="Yes">Yes</button>
-            <button id="No">No</button>
+            <select>
+                <option value="Yes" id="Yes">Yes</option>
+                <option value="No" id="No">No</option>
+            </select>
         </div>
         <div  class="container">
             <input type="text" placeholder="Hospital" id="all3">
@@ -170,22 +186,55 @@
             <input type="text" placeholder="Enter Your City"  id="all4">
             <img src="https://tse1.mm.bing.net/th?id=OIP.Vf_tXhmtdOuLn1tYZMYztwHaFb&sspid=Api&P=0&w=222&h=163">
         </div>
+        <p><button id="checkpost">Please Click here before moving to Next Page</button></p>
         <p><a href = "fundraiser3.html">Save and Continue</p>
         <p id="close"><a href="Project_1.html">Close</p>
     </form>
     <script>
-        var accept = document.getElementById("Yes");
-        var unaccept = document.getElementById("No");
-        function changecolorgreen(){
-            accept.style.backgroundColor = "lawngreen";
-            accept.style.color = "white";
+        function putemail()
+        {
+            var condition = document.getElementById("all2").value;
+            var hospital = document.getElementById("all3").value;
+            var city = document.getElementById("all4").value;
+            var selectedage = document.getElementById("selecting");
+            var agevalue = selectedage.options[selectedage.selectedIndex].value;
+            var Name = document.getElementById("all1").value;
+            var myarr = [
+                {
+                    PatientName : Name ,
+                } ,
+                {
+                    Age : agevalue ,
+                } ,
+                {
+                    Condition : condition ,
+                } ,
+                {
+                    Hospital :hospital ,
+                } ,
+                { 
+                    City: city ,
+                } ,
+                {
+                    id: Name + " " + agevalue + " " + condition + " " + hospital + " " + city ,
+                }
+            ]
+            const details_list = JSON.stringify(myarr);
+            localStorage.setItem("Patientdetails",details_list);
+            var conditionclone = document.getElementById("all2");
+            conditionclone.value = myarr[2];
+            var hospitalclone = document.getElementById("all3");
+            hospitalclone.value = myarr[3];
+            var selectedageclone = document.getElementById("selecting");
+            var agevalueclone = selectedage.options[selectedage.selectedIndex];
+            agevalueclone.value = myarr[1];
+            var Nameclone = document.getElementById("all1");
+            Nameclone.value = myarr[0];
+            var cityclone = document.getElementById("all4");
+            cityclone.value = myarr[4];
         }
-        function changecolorred(){
-            unaccept.style.backgroundColor = "red";
-            unaccept.style.color = "white";
-        }
-        accept.addEventListener('click' , changecolorgreen);
-        unaccept.addEventListener('click' , changecolorred);
+        var checking = document.getElementById("checkpost");
+        checking.addEventListener("click" , putemail);
     </script>
 </body>
 </html>
