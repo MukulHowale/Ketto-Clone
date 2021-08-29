@@ -189,8 +189,7 @@
             <input type="text" placeholder="Enter Your City"  id="all4">
             <img src="https://tse1.mm.bing.net/th?id=OIP.Vf_tXhmtdOuLn1tYZMYztwHaFb&sspid=Api&P=0&w=222&h=163">
         </div>
-        <p><button id="checkpost">Please Click here before moving to Next Page</button></p>
-        <p><a href = "fundraiser3.html">Save and Continue</p>
+        <p id="checkpost"><a href = "fundraiser3.html">Save and Continue</p>
         <p id="close"><a href="Project_1.html">Close</p>
     </form>
     <script>
@@ -235,6 +234,7 @@
             Nameclone.value = myarr[0];
             var cityclone = document.getElementById("all4");
             cityclone.value = myarr[4];
+            a.href = Project_1.html;
         }
         var checking = document.getElementById("checkpost");
         checking.addEventListener("click" , putemail);
