@@ -10,7 +10,8 @@ var fund_raisers = [
     supporters : 17,
     category : "Education",
     raised : 232330,
-    goal :  300000
+    goal :  300000,
+    patient: "sanmat"
    },
    
    {
@@ -22,7 +23,8 @@ var fund_raisers = [
     supporters : 194,
     category : "Education",
     raised : 16800,
-    goal :  300000
+    goal :  300000,
+    patient: "sanmat"
    },
    
    {
@@ -34,7 +36,8 @@ var fund_raisers = [
     supporters : 241,
     category : "Education",
     raised : 2345650,
-    goal :  10000000
+    goal :  10000000,
+    patient: "sanmat"
    },
    
    {
@@ -46,7 +49,8 @@ var fund_raisers = [
     supporters : 157,
     category : "Education",
     raised : 1167650,
-    goal :  15000000
+    goal :  15000000,
+    patient: "sanmat"
    },
    
    {
@@ -58,7 +62,8 @@ var fund_raisers = [
     supporters : 47,
     category : "Education",
     raised : 1043650,
-    goal :  5000000
+    goal :  5000000,
+    patient: "sanmat"
    },
    
    {
@@ -70,7 +75,8 @@ var fund_raisers = [
     supporters : 135,
     category : "Education",
     raised : 673344,
-    goal :  1000000
+    goal :  1000000,
+    patient: "sanmat"
    },
 
 
@@ -83,7 +89,8 @@ var fund_raisers = [
     supporters : 194,
     category : "Environment",
     raised : 23844,
-    goal :  300000
+    goal :  300000,
+    patient: "sanmat"
    },
    {
     title : "Support Us In Planting 2,500 Trees At P&T Colony, Kaval Bairasandra, Bengaluru",
@@ -94,7 +101,8 @@ var fund_raisers = [
     supporters : 94,
     category : "Environment",
     raised : 294731,
-    goal :  600000
+    goal :  600000,
+    patient: "sanmat"
    }, 
    {
     title : "Udvada Village Waste Management & Community Clean Up",
@@ -105,7 +113,8 @@ var fund_raisers = [
     supporters : 20,
     category : "Environment",
     raised : 154001,
-    goal :  1000000
+    goal :  1000000,
+    patient: "sanmat"
    }, 
    {
     title : "Support Hyacinth Clearing Of Jakkur Lake Handled By Fishermen",
@@ -116,7 +125,8 @@ var fund_raisers = [
     supporters : 13,
     category : "Environment",
     raised : 40000,
-    goal :  400000
+    goal :  400000,
+    patient: "sanmat"
    }, 
    {
     title : "Help Us Build Our Native Nursery!",
@@ -127,7 +137,8 @@ var fund_raisers = [
     supporters : 12,
     category : "Environment",
     raised : 31000,
-    goal :  1000000
+    goal :  1000000,
+    patient: "sanmat"
    }, 
    {
     title : "Help Us Create Green Lungspaces In Your Municipal Ward!",
@@ -138,7 +149,8 @@ var fund_raisers = [
     supporters : 6,
     category : "Environment",
     raised : 20000,
-    goal : 165000
+    goal : 165000,
+    patient: "sanmat"
    },
    {
     title : "Save The Sundarbans",
@@ -149,7 +161,8 @@ var fund_raisers = [
     supporters : 6,
     category : "Environment",
     raised : 9500,
-    goal : 30000
+    goal : 30000,
+    patient: "sanmat"
    },  
    {
     title : "Help Me Fund My FIFA Master Expenses And Pursue This Dream Degree",
@@ -160,7 +173,8 @@ var fund_raisers = [
     supporters : 148,
     category : "Education",
     raised : 1267650,
-    goal :  2800000
+    goal :  2800000,
+    patient: "sanmat"
    },
    {
     title : "My Little Boy’s Cancer Has Relapsed Twice But I’m Helpless. Please Save Him",
@@ -171,7 +185,8 @@ var fund_raisers = [
     supporters : 148,
     category : "Medical",
     raised : 103554,
-    goal :  5000000
+    goal :  5000000,
+    patient: "sanmat"
    },
    {
     title : "To Distribute Sanitary Pads To Poor Women Impacted By Covid/Corona Lockdown",
@@ -182,7 +197,8 @@ var fund_raisers = [
     supporters : 478,
     category : "Womens & Girls",
     raised : 801554,
-    goal :  1000000
+    goal :  1000000,
+    patient: "sanmat"
    },
    {
     title : "Help Underprivileged Women With Sanitary Pads",
@@ -193,7 +209,8 @@ var fund_raisers = [
     supporters :367,
     category : "Womens & Girls",
     raised : 302554,
-    goal :  500000
+    goal :  500000,
+    patient: "sanmat"
    },
    {
     title : "URGENT FUNDS NEEDED To Maintain The Shelter Infrastructure",
@@ -204,7 +221,8 @@ var fund_raisers = [
     supporters :367,
     category : "Animals",
     raised : 1802554,
-    goal :  2000000
+    goal :  2000000,
+    patient: "sanmat"
    },
    {
     title : "The Chennai Snake Park Has Run Out Of Funds. The Park & Its Animal Inhabitants Need Your Support To Survive The Pandemic.",
@@ -215,7 +233,8 @@ var fund_raisers = [
     supporters :567,
     category : "Animals",
     raised : 1452554,
-    goal :  5000000
+    goal :  5000000,
+    patient: "sanmat"
    },
    {
     title : "Help Build A Home For 1300 Dogs & 300 Cats",
@@ -226,7 +245,8 @@ var fund_raisers = [
     supporters :597,
     category : "Animals",
     raised : 1252554,
-    goal :  4000000
+    goal :  4000000,
+    patient: "sanmat"
    },
    {
     title : "Cause For Paws By Heartfulness",
@@ -237,12 +257,23 @@ var fund_raisers = [
     supporters :245,
     category : "Animals",
     raised : 902554,
-    goal :  5000000
+    goal :  5000000,
+    patient: "sanmat"
    },
   ] 
  
 
-  localStorage.setItem("fund_raisers", JSON.stringify(fund_raisers));
+  
+
+   var newAdded = JSON.parse(localStorage.getItem("userDetails"));
+   
+    if(newAdded.patient != ""){
+      console.log(" new card added ");
+      fund_raisers.push(newAdded);
+    }
+     
+ 
+    localStorage.setItem("fund_raisers", JSON.stringify(fund_raisers));
 
   function removeAllChildNodes(parent){
       while(parent.firstChild){
