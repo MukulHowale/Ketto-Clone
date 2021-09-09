@@ -109,19 +109,28 @@
 /* about div */
 
 .about{
-    width: 100%;
+    width: 96%;
     height: 50px;
     display: flex;
     padding-left: 30px;
+    border-bottom: 2px solid #01bfbc60;
+    text-align: center;
 }
 
 .about > div{
-    width: 100px;
+    width: 120px;
+    cursor: pointer;
+    /* border: 1px solid black; */
 }
 
-.about > div:nth-child(2){
-    margin-right: 20px;
+#comments{
+    margin-left: 20px;
 }
+
+
+
+
+
 
 /* right div in donate */
 
@@ -129,9 +138,6 @@
     width: 35%;
     height: 100%;
     /* border: 1px solid red; */
-    /* position: absolute; */
-    /* right: 200px; */
-    /* top: 170px */
     float: right;
 }
 
@@ -296,6 +302,7 @@
     /* border: 1px solid black; */
     display: flex;
     padding-left: 250px;
+    padding-top: 100px;
 }
 
 .have-q > p{
