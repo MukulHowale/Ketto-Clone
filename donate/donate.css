@@ -38,7 +38,6 @@
  }
  
  #donateNavbar > div:nth-child(3){
-      
     width: 300px ;
  }
 
@@ -79,6 +78,7 @@
     /* height: 90%; */
     /* border: 1px solid red; */
     box-shadow: 0 6px 40px 0 rgb(0 0 0 / 10%);
+    float: left;
 }
 
 /* image */
@@ -126,12 +126,13 @@
 /* right div in donate */
 
 .rightDonate{
-    width: 25%;
+    width: 35%;
     height: 100%;
     /* border: 1px solid red; */
-    position: absolute;
-    right: 200px;
-    top: 170px
+    /* position: absolute; */
+    /* right: 200px; */
+    /* top: 170px */
+    float: right;
 }
 
 /* donate button */
@@ -160,6 +161,12 @@
     cursor: pointer;
     margin-bottom: 10px;
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
+}
+
+.rightDonate > div:nth-child(3){
+    color: #3B5998; 
+    font-style: italic; 
+    text-align: center;
 }
 
 /* amount */
@@ -214,6 +221,11 @@
     margin-left: 35px;
 }
 
+.dash-diff{
+    width: 100%; 
+    margin-left: 0;
+}
+
 .campaign img{
     width: 60px;
     height: 60px;
@@ -255,6 +267,10 @@
     padding-top: 10px;
 }
 
+.bottom:first-child{
+    cursor: pointer;
+}
+
 /* top donor div */
 
 .top-donor{
@@ -280,6 +296,10 @@
     /* border: 1px solid black; */
     display: flex;
     padding-left: 250px;
+}
+
+.have-q > p{
+    margin-right: 100px;
 }
 
 .chat_2{
@@ -327,6 +347,10 @@
     font-size: 17px;
 }
 
+.font-size-2{
+    font-size: 14px;
+}
+
 .font-color-1{
     color: #444444;
 }
@@ -341,4 +365,20 @@
 
 .back-color{
     background-color: #01BFBD;
+}
+
+.color{
+    color: gray;
+}
+
+.font-color-4{
+    color: #999999;
+}
+
+.font-color-5{
+    color: #007DE1;
+}
+
+.icon-color{
+    color: #ccc;
 }

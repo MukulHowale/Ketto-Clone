@@ -41,3 +41,4 @@ window.onload = function(){
    location.href = "donatefund.html?" + newpara.toString();
 
  }
+
