@@ -57,7 +57,7 @@
 
 .donateCont{
     width: 1200px;
-    height: 1200px;
+    height: 1100px;
     margin: auto;
     /* border: 1px solid black; */
 }
@@ -397,4 +397,8 @@
 
 .padding{
     padding: 50px;
+}
+
+.backColor{
+    background-color: rgba(0, 0, 0, 0.041);
 }

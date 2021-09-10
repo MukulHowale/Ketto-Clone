@@ -144,7 +144,45 @@ window.onload = function(){
   comments.firstElementChild.style.color = "#01BFBD"; 
 
   let div = document.createElement('div');
-  div.style.height = "400px";
+  div.style.height = "100px";
+  div.style.paddingLeft = "60px";
+  div.style.paddingTop = "40px";
+
+  let inpDiv = document.createElement('div');
+  inpDiv.style.width = "600px";
+  inpDiv.style.height = "50px";
+  inpDiv.style.backgroundColor = "#f5f5f5";
+  inpDiv.style.borderRadius = "30px";
+  inpDiv.style.display = "flex";
+  inpDiv.style.paddingLeft = "20px";
+  inpDiv.style.gap = "15px";
+
+  let input = document.createElement('input');
+  input.style.width = "500px";
+  input.style.backgroundColor = "#f5f5f5";
+  input.style.outline = "none";
+  input.style.border = "none";
+  input.placeholder = "Write a comment";  
+
+  let btn1 = document.createElement('button');
+  btn1.style.width = "80px"
+  btn1.style.border = "none";
+  btn1.style.backgroundColor = "transparent";
+  btn1.style.borderRadius = "30px";
+  btn1.innerText = "POST";
+  btn1.setAttribute('class','font-family font-weight-2 font-color-2')
+
+  btn1.onmousemove = () =>{
+    btn1.style.backgroundColor = "#dfdfdf";
+    btn1.style.cursor = "pointer";
+  }
+  btn1.onmouseleave = () =>{
+    btn1.style.backgroundColor = "transparent";
+  }
+
+  inpDiv.append(input,btn1);
+
+  div.append(inpDiv);
 
   changeDiv.replaceChildren(div);
  }
