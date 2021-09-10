@@ -12,7 +12,6 @@
 
 #donateNavbar{
     background-color: white; 
-    /* position: fixed; Make it stick/fixed */
     top: 0; /* Stay on top */
     left:0;
     right: 0;
@@ -58,7 +57,7 @@
 
 .donateCont{
     width: 1200px;
-    height: 1500px;
+    height: 1200px;
     margin: auto;
     /* border: 1px solid black; */
 }
@@ -85,6 +84,8 @@
 
 #imgDonate{
     width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 /* share button */
@@ -128,7 +129,11 @@
 }
 
 
-
+.aboutDiv{
+  text-align : center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius : 10px;
+}
 
 
 
@@ -388,4 +393,8 @@
 
 .icon-color{
     color: #ccc;
+}
+
+.padding{
+    padding: 50px;
 }

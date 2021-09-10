@@ -58,15 +58,21 @@ window.onload = function(){
   comments.firstElementChild.style.color = "gray";
 
   let div = document.createElement('div');
-  div.style.height = "1000px";
-  div.style.textAlign = "center";
+  div.style.height = "300px";
+  div.setAttribute('class','padding aboutDiv')
 
   let h2 = document.createElement('h2');
   h2.textContent = "About the Fundraiser";
+  h2.setAttribute('class','font-family font-color-1');
 
-  div.append(h2);
+  let p = document.createElement('p');
+  p.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae maximus nunc. Aenean eget congue turpis. Nullam eleifend scelerisque metus, vel eleifend tellus. Curabitur sed metus erat. Ut ac odio ut sapien ullamcorper vestibulum ut eget felis. Phasellus urna ipsum, porta id lectus et, interdum tincidunt dui. Ut eu metus consequat, tincidunt nisi eget, semper lorem. Fusce eu turpis eu turpis luctus gravida. Pellentesque nec magna purus. Duis non molestie urna, at volutpat sapien. Aenean vel pellentesque ipsum, in egestas mauris. Donec vitae lectus ornare, vehicula dui quis, imperdiet arcu. Aliquam blandit tellus ut nisi porta tempor. Nullam nec velit eu magna elementum pharetra porttitor sit amet libero. Nullam eu nisl turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.";
+  p.setAttribute('class','font-family font-size font-color-1')
+  p.style.textAlign = "left";
 
-  changeDiv.replaceChildren(div)
+  div.append(h2,p);
+
+  changeDiv.replaceChildren(div);
 
  }
 
@@ -82,7 +88,46 @@ window.onload = function(){
   comments.firstElementChild.style.color = "gray";
 
   let div = document.createElement('div');
-  div.style.height = "200px";
+  div.style.height = "100px";
+  div.setAttribute('class','padding aboutDiv')
+
+  let innerDiv = document.createElement('div');
+  innerDiv.style.width = "580px"
+  innerDiv.style.height = "50px";
+  innerDiv.style.backgroundColor = "#f5f5f5";
+  innerDiv.style.borderRadius = "10px";
+  innerDiv.style.padding = "20px";
+  innerDiv.style.display = "flex";
+  innerDiv.style.gap = "20px";
+
+  let pDiv = document.createElement('div');
+  let btn = document.createElement('button');
+
+  let f = document.getElementById('campaigner').innerText;
+
+  pDiv.style.width = "400px";
+  pDiv.innerText = `Feel free to ask ${f} for a new update on this Fundraiser.`;
+  pDiv.setAttribute('class','font-family font-color-1');
+
+  btn.style.width = "200px"
+  btn.style.height = "50px"
+  btn.innerText = "Ask For Update";
+  btn.style.backgroundColor = "white";
+  btn.style.boxShadow = "0 6px 40px 0 rgb(0 0 0 / 10%)";
+  btn.style.border = "none";
+  btn.style.lineHeight = "normal";
+  btn.setAttribute('class','font-family font-color-2 font-weight-2')
+  btn.onmouseover = () =>{
+    btn.style.cursor = "pointer";
+    btn.style.backgroundColor = "#f5f5f5";
+  }
+  btn.onmouseleave = () =>{
+    btn.style.backgroundColor = "white";
+  }
+
+  innerDiv.append(pDiv,btn);
+
+  div.append(innerDiv);
 
   changeDiv.replaceChildren(div);
  }
