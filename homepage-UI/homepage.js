@@ -104,35 +104,25 @@ function car(i){
     
     var img = document.createElement("img");
     img.src = success[i].image;
-    img.style.borderRadius = "5px";
-    img.style.float = "left";
     
     var divInfo = document.createElement("div");
     divInfo.setAttribute('id', 'divInfo');
     
     var H2 = document.createElement('h2');
     H2.textContent = success[i].h2;
-    H2.style.marginTop = "20px";
-    H2.style.marginBottom ="20px";
-    H2.style.fontSize ="20px";
     H2.setAttribute('class','font-style');
     H2.setAttribute('class','font-color_1');
     
     var P = document.createElement('p');
     P.textContent = success[i].p;
-    P.style.fontSize = "17px";
-    P.style.lineHeight = "27px";
-    P.style.marginBottom = "50px";
     P.setAttribute('class','font-style');
     P.setAttribute('class','font-color_1');
     
     var divA = document.createElement('div');
-    divA.style.width = "100%";
-    divA.style.height ="10px";
+    divA.setAttribute('id','divA');
     
     var A = document.createElement('a');
     A.textContent = "Read More";
-    A.style.cursor = "pointer";
     A.setAttribute('class','green-color-text-2')
     
     divA.appendChild(A);
