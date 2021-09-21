@@ -1,3 +1,19 @@
+//hide the content of homepage if havbar menu button clicked in mobile devices for responsive design.
+
+function hideHomepage(){
+    var chboxs = document.getElementsByName("chckbox");
+    var vis = "block";
+    for(var i=0;i<chboxs.length;i++) { 
+        if(chboxs[i].checked){
+         vis = "none";
+            break;
+        }
+    }
+ document.getElementById('mainboxHomepage').style.display = vis;
+
+}
+
+
 // change background color of button talk button
 var talk  = document.getElementsByClassName('talk');
 

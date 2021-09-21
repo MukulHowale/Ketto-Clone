@@ -4,8 +4,9 @@
     top: 0; /* Stay on top */
     left:0;
     right: 0;
-    height: 57px;
+    height: 82px;
     padding: 10px;
+    transition:  all 0.4s ease;
 }
 #navbar >div{
   
@@ -103,4 +104,10 @@
 .clear{
     clear: both;
 }
- 
+
+
+@media (max-width :720px){
+    #navbar{
+        display: none;
+    }
+}
