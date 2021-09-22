@@ -14,6 +14,11 @@ function hideHomepage(){
 }
 
 
+ function startfundRaiserMethod(){
+     window.location.href = "Fundraiser.html";
+ }
+
+
 // change background color of button talk button
 var talk  = document.getElementsByClassName('talk');
 
