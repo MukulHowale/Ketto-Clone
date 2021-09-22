@@ -41,7 +41,7 @@
      color: #21d821;
      font-weight: 700;
      margin-left: 40px;
-     margin-top: -23px;
+     margin-top: -24px;
  }
  .iconify{
     margin-left: 5px; 
@@ -67,7 +67,7 @@
     font-weight: 900;
     color:#01bfbd;
     text-align: center;
-    margin-top: 1px;
+    margin-top: -1px;
  }
  
  #navbar > div:nth-child(7){
