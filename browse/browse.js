@@ -1,22 +1,5 @@
  
- 
- //hide content for responsice navbar menu
-
- function hidebrowsePage(){
-  var chboxs = document.getElementsByName("chckbox");
-  var vis = "block";
-  for(var i=0;i<chboxs.length;i++) { 
-      if(chboxs[i].checked){
-       vis = "none";
-          break;
-      }
-  }
-  document.getElementById('backgroundImage').style.display = vis;
-  document.getElementById('backText').style.display = vis;
-  document.getElementById('categories').style.display = vis;
-  document.getElementById('fundraisers').style.display = vis;
-  document.getElementById('respCat').style.display = vis;
-}
+  
 
 
   var fund_raisers = JSON.parse(localStorage.getItem("fund_raisers"));

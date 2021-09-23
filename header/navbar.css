@@ -49,7 +49,7 @@ nav .menu-btn i{
     }
     nav ul{
         position: fixed;
-        top: 80px;
+        top: 60px;
         background-color: #fff;
         left: -100%;
         height: 100vh;

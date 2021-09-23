@@ -259,11 +259,15 @@
     display: flex;
 }
 
+
+
 .benifitor > div:nth-child(2) div{
     margin-left: 40%;
     margin-top: 10px;
     /* border: 1px solid black; */
 }
+
+ 
 
 .capaigner > div:nth-child(2) div{
     margin-left: 40%;
@@ -427,6 +431,10 @@
         margin-left: 0px;
     }
 
+    .donateCont{
+        margin-bottom: 30%;
+    }
+
     .have-q{
         display: none;
     }
@@ -462,6 +470,10 @@
         display: none;
        }
        
+    .donateCont{
+        margin-bottom: 40%;
+    }
+
        #donateNavbar > div:nth-child(3){
           display: none;
        }
