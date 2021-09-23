@@ -40,6 +40,26 @@ We live in such environment where most of us doesn't have proper fac
 * Go to homepage-UI
 * Go to homepage.html and copy path and open in browser
 
+## Homepage UI
+![Crowdfunding India - Best Crowdfunding Platform   Website - Ketto - Google Chrome 23-09-2021 16_26_28](https://user-images.githubusercontent.com/86506262/134496068-b9312f24-f839-46aa-be62-0fb92dc12697.png)
+* We tried to make the homepage UI as accurate as possible. It contains all the look and feels of the original website.
+
+## Sign - IN Page
+![Crowdfunding India - Best Crowdfunding Platform   Website - Ketto - Google Chrome 23-09-2021 16_26_44](https://user-images.githubusercontent.com/86506262/134496326-9cf7f60c-d7ef-4493-8c21-7833ac764dde.png)
+* The sign-in page wants us to first enter all the details required to a general sign-in process.
+
+## Browse Fundraiser Page
+![Crowdfunding India - Best Crowdfunding Platform   Website - Ketto - Google Chrome 23-09-2021 16_27_07](https://user-images.githubusercontent.com/86506262/134496541-31db1e8b-7114-4b43-b117-47b522bb90a2.png)
+* The page has all the inforamtion in form of cards and is could be sorted category wise.
+
+## Donate Details Page
+![Crowdfunding India - Best Crowdfunding Platform   Website - Ketto - Google Chrome 23-09-2021 16_27_17](https://user-images.githubusercontent.com/86506262/134496747-d53557ea-9af4-49a5-ab14-60a5f18cac8c.png)
+* It contais details given by the campainger which can be seen after clicking on the details cards in the browse page.
+
+## Donate Page
+![Crowdfunding India - Best Crowdfunding Platform   Website - Ketto - Google Chrome 23-09-2021 16_27_24](https://user-images.githubusercontent.com/86506262/134497071-c667f9cb-3e00-429e-a45c-e63b264da943.png)
+* Throught this page donations can be made which are reflected on the donate details page.
+
 ## Further Improvements that can be made:
 * As we know the saying ,  "there is always room for improvement" . Because nobody is perfect but we can work towards making things better , so we have some ideas to make our website functionality even more robust and better .
 
