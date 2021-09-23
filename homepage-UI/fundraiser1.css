@@ -111,3 +111,39 @@ body{
      padding-top:5px;
      margin-left: 5px;
  }
+
+ @media only screen and (max-width:440px){
+    #mainBox{
+        width: 100%;
+    }
+  
+    #mainBox input{
+       width: 80%;
+    }
+
+    #relationship{
+        width: 80%;
+    }
+
+    #next{
+        width: 100%;
+    }
+
+ }
+
+ @media only screen and (max-width:400px){
+    #inner1{
+        width: 70%;
+    }
+
+    #purpose{
+        margin-top: 5%;
+        margin-left: 24%;
+        margin-right: 35%;
+    }
+
+    #textdiv{
+        width: 98%;
+        height: 50px;
+    }
+ }

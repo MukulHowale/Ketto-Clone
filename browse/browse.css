@@ -208,7 +208,7 @@
     display: none;
 }
 
-@media screen and (max-width: 430px){
+@media only screen and (max-width: 430px){
   
      html,body{
          width: 100%;
@@ -230,7 +230,7 @@
     }
 
      #respCatInner{
-         margin-top: -180%;
+         margin-top: -155%;
          margin-bottom: 40%;
          display: grid;
          grid-template-columns: 25% 25% 25% 25%;
@@ -241,7 +241,7 @@
      }
  
      #respCatInner  a{
-        font-size: 12px;
+        font-size: 15px;
         text-decoration: none;
         color:#01bfbd;
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -260,7 +260,65 @@
     #fundraisers{
         width: 100%;
         margin-left: 15%;
-        margin-top: -50%;
+        margin-top: -36%;
+        display: grid;
+        row-gap: 5px;
+        grid-template-columns: 20% ;
+    }
+
+    #fundraisers > a{
+        margin: 0;
+        right: 0;
+        gap: 2px;
+        margin-left:24%;
+        height: 400px;
+        margin-top: 80px;
+    }
+
+    #footer{
+        display: none;
+    }
+}   
+
+/* for iphone X */
+@media screen and (max-width: 400px){
+  
+    #startFundraise >a{
+     margin-top: -20px;
+    }
+
+     #respCatInner{
+         margin-top: -180%;
+         margin-bottom: 40%;
+         display: grid;
+         grid-template-columns: 25% 25% 25% 25%;
+         row-gap: 8px;
+         column-gap :-4x ;
+         list-style: none;
+         padding-left: 2%;
+     }
+ 
+     #respCatInner  a{
+        font-size: 13px;
+        text-decoration: none;
+        color:#01bfbd;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        padding: 2%;
+        border-radius: 4px;
+     }
+
+
+    #backgroundImage{
+        height:600px ;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size:contain;
+    }
+
+    #fundraisers{
+        width: 100%;
+        margin-left: 15%;
+        margin-top: -30%;
         display: grid;
         row-gap: 5px;
         grid-template-columns: 20% ;
@@ -274,8 +332,4 @@
         margin-top: 80px;
     }
 
-    #footer{
-        display: none;
-    }
-   
 }
