@@ -208,6 +208,12 @@
     display: none;
 }
 
+@media only screen and (max-width: 720px){
+    #contact > h3{
+        margin: 0px;
+    }
+}
+
 @media screen and (max-width: 430px){
   
      html,body{
@@ -274,8 +280,7 @@
         margin-top: 80px;
     }
 
-    #footer{
-        display: none;
+    #contact > h3{
+        margin: 0px;
     }
-   
 }

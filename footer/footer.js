@@ -217,8 +217,6 @@ p90.textContent = "Copyright © 2021 Ketto Online Ventures Pvt Ltd. All Rights R
 p90.style.textAlign = "center";
 p90.style.color = "white";
 
-
-
 low.appendChild(p90);
 
 main[0].appendChild(footer);
@@ -228,6 +226,7 @@ footer.append(upper,mid,low);
 upper.append(left,right);
 
 right.append(kettoImg, icons, follow, contact);
+
 
 
 

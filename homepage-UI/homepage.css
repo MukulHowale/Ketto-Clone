@@ -1014,7 +1014,7 @@ h2{
     }
 
     .chat > div{
-        width: 200px;
+        width: 100%;
     }
 
     .chat >div > i {
@@ -1107,10 +1107,6 @@ h2{
     }
 
     .featured-in > div:nth-child(3){
-        display: none;
-    }
- 
-    #footer{
         display: none;
     }
     
