@@ -427,6 +427,9 @@
 }
 
 @media only screen and (max-width: 750px){
+    .donateCont{
+        margin-bottom: 30%;
+    }
     #donateNavbar > div:nth-child(1){
         margin-left: 0px;
     }
@@ -466,6 +469,10 @@
 }
 
 @media only screen and (max-width: 430px){
+    .donateCont{
+        margin-bottom: 40%;
+    }
+
     #donateNavbar > div:nth-child(2){
         display: none;
        }
