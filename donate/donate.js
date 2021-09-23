@@ -58,7 +58,7 @@ window.onload = function(){
   comments.firstElementChild.style.color = "gray";
 
   let div = document.createElement('div');
-  div.style.height = "300px";
+  div.style.height = "30%";
   div.setAttribute('class','padding aboutDiv')
 
   let h2 = document.createElement('h2');

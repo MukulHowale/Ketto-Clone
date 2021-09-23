@@ -612,6 +612,11 @@ h2{
 
 
 @media only screen and (min-width: 720px){
+    body{
+        overflow-x: hidden;
+    }
+    
+    
     .img-div{
         height: 500px;
     }
@@ -625,6 +630,11 @@ h2{
 }
 
 @media only screen and (max-width: 720px){
+    body{
+        overflow-x: hidden;
+    }
+    
+
     .img-div{
         height: 500px;
     }
@@ -1109,6 +1119,10 @@ h2{
     .featured-in > div:nth-child(3){
         display: none;
     }
+
+    body{
+        overflow-x: hidden;
+    }
     
 }
 
@@ -1155,4 +1169,8 @@ h2{
         margin-left: 0%;
     }
 
+    body{
+        overflow-x: hidden;
+    }
+    
 }

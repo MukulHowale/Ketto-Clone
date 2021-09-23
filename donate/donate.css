@@ -1,3 +1,6 @@
+.main{
+    margin-top: 10%;
+}
 /* donate header */
 
 #donateNavbar p {
@@ -11,6 +14,7 @@
 }
 
 #donateNavbar{
+    display: flex;
     background-color: white; 
     top: 0; /* Stay on top */
     left:0;
@@ -27,21 +31,21 @@
 
 #donateNavbar > div:nth-child(1){
     width: 80px;
-   margin-left: 200px;
+    margin-left: 12%;
 }
 
 #donateNavbar > div:nth-child(2){
   text-align:center;  
   margin-left:0px;
-  width: 200px ;
+  width: 17%;
  }
  
  #donateNavbar > div:nth-child(3){
-    width: 300px ;
+    width: 40% ;
  }
 
  #donateNavbar > div:nth-child(4){
-    margin-left: 400px;   
+    margin-left: 10%;   
     width: 70px ;
     height: 32px ;
     margin-top: 10px;
@@ -56,18 +60,20 @@
 /* body */
 
 .donateCont{
-    width: 1200px;
+    width: 75%;
     height: 1100px;
     margin: auto;
+    padding: 5%;
     /* border: 1px solid black; */
 }
 
  /* heading */
 
 #upperDonate{
+    width: 100% ;
     text-align: center;
     font-size: 36px;
-    padding: 20px;
+    padding-bottom: 20px;
 }
 
 /* left div in donate */
@@ -91,14 +97,14 @@
 /* share button */
 
 .share{
-    width: 100%;
+    width: 50%;
     height: 80px;
     padding-top: 30px;
-    padding-left: 450px;
+    padding-left: 55%;
 }
 
 .share > button{
-    width: 200px;
+    width: 80%;
     height: 50px;
     border: none;
     background-color: white;
@@ -113,7 +119,7 @@
     width: 96%;
     height: 50px;
     display: flex;
-    padding-left: 30px;
+    padding-left: 3%;
     border-bottom: 2px solid #01bfbc60;
     text-align: center;
 }
@@ -141,7 +147,7 @@
 
 .rightDonate{
     width: 35%;
-    height: 100%;
+    height: 1000px;
     /* border: 1px solid red; */
     float: right;
 }
@@ -223,6 +229,11 @@
     height: 90px;
 }
 
+.capaigner > div, .benifitor > div{
+    width: 30%;
+    height: 90px;
+}
+
 .dash{
     width: 80%;
     height: 0.2px;
@@ -240,7 +251,7 @@
 .campaign img{
     width: 60px;
     height: 60px;
-    margin-left: 40px;
+    margin-left: 40%;
     margin-top: 10px;
 }
 
@@ -249,13 +260,13 @@
 }
 
 .benifitor > div:nth-child(2) div{
-    margin-left: 40px;
+    margin-left: 40%;
     margin-top: 10px;
     /* border: 1px solid black; */
 }
 
 .capaigner > div:nth-child(2) div{
-    margin-left: 40px;
+    margin-left: 40%;
     margin-top: 10px;
     /* border: 1px solid black; */
 }
@@ -302,20 +313,20 @@
 /* have questions div */
 
 .have-q{
-    width: 1200px;
+    width: 85%;
     height: 50px;
     /* border: 1px solid black; */
     display: flex;
-    padding-left: 250px;
+    padding-left: 15%;
     padding-top: 100px;
 }
 
 .have-q > p{
-    margin-right: 100px;
+    margin-right: 10%;
 }
 
 .chat_2{
-    width: 400px;
+    width: 40%;
     height: 100%;
     display: flex;
 }
@@ -401,4 +412,73 @@
 
 .backColor{
     background-color: rgba(0, 0, 0, 0.041);
+}
+
+
+@media only screen and (max-width: 950px){
+    #donateNavbar > div:nth-child(1){
+        margin-left: 10%;
+    }
+
+}
+
+@media only screen and (max-width: 750px){
+    #donateNavbar > div:nth-child(1){
+        margin-left: 0px;
+    }
+
+    .have-q{
+        display: none;
+    }
+
+    .top-donor{
+        display: none;
+    }
+
+    .rightDonate{
+        float: none;
+        height: 500px;
+        width: 100%;
+        margin-top: 100%;
+        margin-bottom: 50%;
+    }
+
+    .leftDonate{
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+    .team{
+        display: none;
+    }
+
+    #contact > h3{
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 430px){
+    #donateNavbar > div:nth-child(2){
+        display: none;
+       }
+       
+       #donateNavbar > div:nth-child(3){
+          display: none;
+       }
+
+       #donateNavbar > div:nth-child(1){
+           margin-right: 35%;
+     }
+
+     .team{
+         display: none;
+     }
+
+     #contact > h3{
+        margin: 0px;
+    }
+
+    .leftDonate{
+        margin-bottom: 10%;
+    }
 }
