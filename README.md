@@ -44,21 +44,26 @@ We live in such environment where most of us doesn't have proper fac
 ![Crowdfunding India - Best Crowdfunding Platform   Website - Ketto - Google Chrome 23-09-2021 16_26_28 (2)](https://user-images.githubusercontent.com/86506262/134497328-f910126f-b585-459b-ab44-b4a1717a571d.png)
 * We tried to make the homepage UI as accurate as possible. It contains all the look and feels of the original website.
 
+
 ## Sign - IN Page
 ![Crowdfunding India - Best Crowdfunding Platform   Website - Ketto - Google Chrome 23-09-2021 16_26_44 (2)](https://user-images.githubusercontent.com/86506262/134497497-0d0819bd-c425-4e68-937b-02a2e102b5c1.png)
 * The sign-in page wants us to first enter all the details required to a general sign-in process.
+
 
 ## Browse Fundraiser Page
 ![Crowdfunding India - Best Crowdfunding Platform   Website - Ketto - Google Chrome 23-09-2021 16_27_07 (2)](https://user-images.githubusercontent.com/86506262/134497399-7f8f7364-1ac0-4619-a104-b58b39370b8c.png)
 * The page has all the inforamtion in form of cards and is could be sorted category wise.
 
+
 ## Donate Details Page
 ![Crowdfunding India - Best Crowdfunding Platform   Website - Ketto - Google Chrome 23-09-2021 16_27_17 (2)](https://user-images.githubusercontent.com/86506262/134497553-26cb9b7e-873d-4e20-a843-77402782aad4.png)
 * It contais details given by the campainger which can be seen after clicking on the details cards in the browse page.
 
+
 ## Donate Page
 ![Crowdfunding India - Best Crowdfunding Platform   Website - Ketto - Google Chrome 23-09-2021 16_27_24 (2)](https://user-images.githubusercontent.com/86506262/134497618-38d3a5be-01ab-4332-9131-0480749ab4a3.png)
 * Throught this page donations can be made which are reflected on the donate details page.
+
 
 ## Further Improvements that can be made:
 * As we know the saying ,  "there is always room for improvement" . Because nobody is perfect but we can work towards making things better , so we have some ideas to make our website functionality even more robust and better .
