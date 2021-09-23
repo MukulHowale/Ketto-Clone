@@ -15,7 +15,6 @@
   document.getElementById('backText').style.display = vis;
   document.getElementById('categories').style.display = vis;
   document.getElementById('fundraisers').style.display = vis;
-  document.getElementsByClassName('main').style.display = vis;
   document.getElementById('respCat').style.display = vis;
 }
 
