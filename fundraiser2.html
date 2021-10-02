@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FundRaiser2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body{
+            width:70%;
+            text-align: center;
+            margin-left: 10%;
+            margin-right: 25%;
+            font-family: 'Source Sans Pro', sans-serif !important;
+            background-color: rgb(61,61,61);
+        }
+        h2{
+            line-height: 40px;
+            margin-bottom: 0px;
+        }
+        #mainbox{
+            background-color: honeydew;
+            margin-left: 350px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            width:450px ;
+            border-radius: 12px;
+        }
+        a{ 
+           margin-top: 20px;
+           text-decoration: none;
+           color: inherit;
+        }
+        img{
+            width:1.5%;
+            height:1.5%;
+        }
+        input{
+            border: 1px solid gainsboro;
+            height: 30px;
+            border-radius: 4px;
+            width:360px ;
+        }
+        label{
+            line-height: 30px;
+            margin-left: -245px;
+        }
+        #label2{
+            margin-left: -280px;
+        }
+        .label3{
+            margin-left: -190px;
+        }
+        #label4{
+            line-height: 40px;
+          
+            margin-left: -140px;
+        }
+        #label5{
+            margin-left: -310px; 
+        }
+        #label6{
+            margin-left: -270px;
+        }
+         input:hover{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+         } 
+
+        .container{
+            
+            margin:1% 0%;
+        }
+         
+         
+        #selecting{
+            border: 1px solid gainsboro;
+            width: 370px;
+            height: 30px;
+            border-radius: 4px;
+        }
+        #selecting :hover{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            
+        }
+  
+        .toggle-button-cover
+{ 
+    
+    display: table-cell;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.button-cover
+{   
+    
+    height: 34px;
+    width:78px ;
+    margin-left: 334px;
+    margin-top: -34px;
+    box-shadow: 0 10px 20px -8px #c5d6d6;
+    border-radius: 4px;
+}
+
+.button-cover:before
+{
+    counter-increment: button-counter;
+    content: counter(button-counter);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #d7e3e3;
+    font-size: 12px;
+    line-height: 1;
+    padding: 5px;
+}
+
+.button-cover, .knobs, .layer
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.button
+{
+    position: relative;
+    top: 50%;
+    width: 74px;
+    height: 36px;
+    margin: -20px auto 0 auto;
+    overflow: hidden;
+}
+ 
+
+.button.b2
+{
+    border-radius: 2px;
+}
+
+.checkbox
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.knobs
+{
+    z-index: 2;
+}
+
+.layer
+{
+    width: 100%;
+    background-color: #ebf7fc;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+ 
+/* Button 10 */
+#button-10 .knobs:before, #button-10 .knobs:after, #button-10 .knobs span
+{
+    position: absolute;
+    top: 4px;
+    width: 20px;
+    height: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    padding: 9px 4px;
+    border-radius: 2px;
+    transition: 0.3s ease all;
+}
+
+#button-10 .knobs:before
+{
+    content: '';
+    left: 4px;
+    background-color: #03A9F4;
+}
+
+#button-10 .knobs:after
+{
+    content: 'NO';
+    right: 4px;
+    color: #4e4e4e;
+}
+
+#button-10 .knobs span
+{
+    display: inline-block;
+    left: 4px;
+    color: #fff;
+    z-index: 1;
+}
+
+#button-10 .checkbox:checked + .knobs span
+{
+    color: #4e4e4e;
+}
+
+#button-10 .checkbox:checked + .knobs:before
+{
+    left: 42px;
+    background-color: #F44336;
+}
+
+#button-10 .checkbox:checked + .knobs:after
+{
+    color: #fff;
+}
+
+#button-10 .checkbox:checked ~ .layer
+{
+    background-color: #fcebeb;
+}
+
+#nextbutton{
+    
+    padding-top: 4px;
+    display: block;
+    width:450px ;
+    height: 40px;
+    background-color: #01BFBD;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+#nextbuttonText{
+    margin-top: 5px;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 22px;
+}
+ 
+ 
+ 
+    </style>
+</head>
+<body>
+ <div id="mainbox">
+    <h2>Tell us about the patient</h2><hr/>
+    <form>
+        <div class="container">
+            <label >Patient's full name</label> <br>
+            <input type="text"   id="patientName">
+        </div>
+        <div class="container">
+            <label id="label2" >Patient's age</label>  <br>
+            <select id="selecting">
+                <option value="0-10 years">0-10 years</option>
+                <option value="10-20 years">10-20 years</option>
+                <option value="20-30 years">20-30 years</option>
+                <option value="30-40 years">30-40 years</option>
+                <option value="40-50 years">40-50 years</option>
+                <option value="50-60 years">50-60 years</option>
+                <option value="60-70 years">60-70 years</option>
+                <option value="70-80 years">70-80 years</option>
+                <option value="80-90 years">80-90 years</option>
+                <option value="90-100 years">90-100 years</option>
+                <option value="100-110 years">100-110 years</option>
+                <option value="110-120 years">110-120 years</option>
+                <option value="120-130 years">120-130 years</option>
+                <option value="More than 130 years">More than 130 years</optio>
+            </select>
+        </div>
+        <div  class="container">
+            <label class="label3" >Ailment/Medical Condition</label> <br>
+            <input type="text"   id="medicalCond">
+             
+        </div>
+        <div  class="container">
+            <label id="label4" >Is the patient admitted to Hospital</label>
+            <div class="toggle-button-cover">
+                <div class="button-cover">
+                  <div class="button b2" id="button-10">
+                    <input type="checkbox" class="checkbox">
+                    <div class="knobs">
+                      <span>YES</span>
+                    </div>
+                    <div class="layer"></div>
+                  </div>
+                </div>
+              </div> 
+        
+         
+            <label id="label5" >Hospital</label> <br>
+            <input type="text"  id="hospital" > <br> <br>
+            <label id="label6"  >Enter Your City</label> <br>
+            <input type="text" placeholder="Enter Your City"  id="City">
+             <br> 
+         
+    </form> 
+    <a id="nextbutton" onclick="nexHandler()"  href = "#"> <p id="nextbuttonText">Next</p>  </a>  
+  </div>  
+    <script>
+       function nexHandler(){
+        var patientname = document.getElementById('patientName').value;
+        var Condition = document.getElementById('medicalCond').value;
+        var hospt = document.getElementById('hospital').value;
+        var city = document.getElementById('City').value;
+
+        if(patientname=="" || Condition=="" || hospt=="" || city=="" ){
+            window.alert("Please Fill all the details");
+        }
+        else{  
+           var user_object = JSON.parse(localStorage.getItem("userDetails"));
+           user_object.patient = patientname;
+           localStorage.setItem("userDetails",JSON.stringify(user_object));
+           var fndraisersArray = JSON.parse(localStorage.getItem("fund_raisers"));
+           
+           fndraisersArray.push(user_object);
+           localStorage.setItem("fund_raisers",JSON.stringify(fndraisersArray));
+           
+             window.alert("Congratulations Your Fundraiser is LIVE !!!!")
+            location.href = "browse.html";
+        }
+
+       }
+    </script>
+</body>
+</html>
